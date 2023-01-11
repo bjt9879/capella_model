@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Capella_Version_6.0.0-->
+<org.polarsys.capella.core.data.capellamodeller:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:libraries="http://www.polarsys.org/capella/common/libraries/6.0.0"
+    xmlns:org.polarsys.capella.core.data.capellacommon="http://www.polarsys.org/capella/core/common/6.0.0"
+    xmlns:org.polarsys.capella.core.data.capellacore="http://www.polarsys.org/capella/core/core/6.0.0"
+    xmlns:org.polarsys.capella.core.data.capellamodeller="http://www.polarsys.org/capella/core/modeller/6.0.0"
+    xmlns:org.polarsys.capella.core.data.cs="http://www.polarsys.org/capella/core/cs/6.0.0"
+    xmlns:org.polarsys.capella.core.data.ctx="http://www.polarsys.org/capella/core/ctx/6.0.0"
+    xmlns:org.polarsys.capella.core.data.epbs="http://www.polarsys.org/capella/core/epbs/6.0.0"
+    xmlns:org.polarsys.capella.core.data.fa="http://www.polarsys.org/capella/core/fa/6.0.0"
+    xmlns:org.polarsys.capella.core.data.information="http://www.polarsys.org/capella/core/information/6.0.0"
+    xmlns:org.polarsys.capella.core.data.information.datatype="http://www.polarsys.org/capella/core/information/datatype/6.0.0"
+    xmlns:org.polarsys.capella.core.data.information.datavalue="http://www.polarsys.org/capella/core/information/datavalue/6.0.0"
+    xmlns:org.polarsys.capella.core.data.interaction="http://www.polarsys.org/capella/core/interaction/6.0.0"
+    xmlns:org.polarsys.capella.core.data.la="http://www.polarsys.org/capella/core/la/6.0.0"
+    xmlns:org.polarsys.capella.core.data.oa="http://www.polarsys.org/capella/core/oa/6.0.0"
+    xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/6.0.0"
+    xmlns:org.polarsys.capella.core.data.pa.deployment="http://www.polarsys.org/capella/core/pa/deployment/6.0.0"
+    id="c6e2da52-5905-4d1f-88bc-48aa7a449b00"
+    name="Flight_Simulator">
+  <ownedExtensions xsi:type="libraries:ModelInformation" id="4555948d-a091-4d77-aa8c-2ac71ff25e5a"/>
+  <ownedEnumerationPropertyTypes xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyType"
+      id="abe7e634-73e1-4608-9649-0a8c3d2182e8" name="ProgressStatus">
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="5de80827-3928-47a3-a822-a901a8faffaa" name="DRAFT"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="e80ae472-28fe-469c-a4c2-903644568136" name="TO_BE_REVIEWED"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="f95b0734-fe12-446a-9661-a34d9b672d0a" name="TO_BE_DISCUSSED"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="44b9520b-8487-4e13-a786-5309587d04fd" name="REWORK_NECESSARY"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="a8f51215-ceb9-494e-b4a4-f693485e0883" name="UNDER_REWORK"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="c8cd14c4-1874-4d42-8284-48df0a1da7d1" name="REVIEWED_OK"/>
+  </ownedEnumerationPropertyTypes>
+  <keyValuePairs xsi:type="org.polarsys.capella.core.data.capellacore:KeyValue" id="5a651bf3-9744-4fea-b3ef-275b9d696989"
+      key="projectApproach" value="SingletonComponents"/>
+  <ownedModelRoots xsi:type="org.polarsys.capella.core.data.capellamodeller:SystemEngineering"
+      id="702eeb8b-7a08-47a7-b646-eeb1e0e1777a" name="Flight_Simulator">
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.oa:OperationalAnalysis"
+        id="163c2744-c6c9-437f-af0e-7cb2789ba8a7" name="Operational Analysis">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalActivityPkg"
+          id="c191f4a5-1a11-44e6-807d-9ba95c043002" name="Operational Activities">
+        <ownedOperationalActivities xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+            id="196fc9ef-81bd-4b50-a743-b4e36462cbb3" name="Root Operational Activity">
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="792fbedb-8471-4dfa-b09e-7bad8c604451" name="Request Certification"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="05b1dc84-7193-4241-bcdd-c92e89d9791c" name="Approves Inspection"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="dbfce548-ffb7-4dfb-b967-26df222fae63" name="Perform Inspection"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="a84ba848-4791-4264-adda-c96885e609ec" name="Submit Qualification and Approval Guide (QAG) and Video"
+              summary="The QAG is a detailed description of the simulated aircraft systems, design criteria, and functionality for a BATD or AATD trainer"
+              description="&lt;p>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>To request FAA approval of an ATD, manufacturers should send the application letter &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>(see &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>Figure E-1&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>) with an accompanying Q&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>AG and operations manual requesting &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>evaluation to: &lt;/span>&lt;/p>&#xA;&#xA;&lt;p>&lt;span style=&quot;font-family:sans-serif; font-size:16px&quot;>&amp;bull;&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>9-AFS&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>-800-Correspondence@faa.gov. Send request with documents attached in word&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>text format (preferred), or&lt;/span>&lt;/p>&#xA;&#xA;&lt;p>&lt;span style=&quot;font-family:sans-serif; font-size:16px&quot;>&amp;bull;&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>FAA Flight Standards Service, General Aviation and Commercial Division, Airmen&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>Certification and T&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>raining Branch &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>(AFS&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>-810), 800 Independence Avenue, S.W.,&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>Washington, DC 20591.&lt;/span>&lt;/p>&#xA;"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="7939fac6-e79c-475f-b5aa-4dcf5dcada2e" name="Conduct a review of the required QAG document and video"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="c4b39b6b-609e-48d6-85f1-19411e4e88cf" name="Conduct an operational evaluation of the ATD for consideration and approval"
+              summary="Derived from AC 61-136B Appendix B (9/12/18) part A.3.3"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="23726278-c867-4a45-bee5-33a79ad350bb" name="Submit operations manual, and application letter "
+              summary="At least 90 days (120 days is recommended) in advance of any proposed use for pilot training or experience requirements"
+              description="&lt;p>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>To request FAA approval of an ATD, manufacturers should send the application letter &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>(see &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>Figure E-1&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>) with an accompanying Q&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>AG and operations manual requesting &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>evaluation to: &lt;/span>&lt;/p>&#xA;&#xA;&lt;p>&lt;span style=&quot;font-family:sans-serif; font-size:16px&quot;>&amp;bull;&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>9-AFS&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>-800-Correspondence@faa.gov. Send request with documents attached in word&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>text format (preferred), or&lt;/span>&lt;/p>&#xA;&#xA;&lt;p>&lt;span style=&quot;font-family:sans-serif; font-size:16px&quot;>&amp;bull;&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>FAA Flight Standards Service, General Aviation and Commercial Division, Airmen&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>Certification and T&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>raining Branch &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>(AFS&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>-810), 800 Independence Avenue, S.W.,&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>Washington, DC 20591.&lt;/span>&lt;/p>&#xA;"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="73f1f031-40f0-4e72-81e1-767cfc3e2d1a" name="Provide a letter of authorization (LOA) "
+              summary="Approval of the ATD model for use under the applicable rules in parts 61 and 141; Derived from AC 61-136B Appendix B (9/12/18) part A.3.3"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="d368626e-4c7d-47dd-8e66-b23983967b3b" name="Preliminarily approve the QAG"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="c4561e16-de72-4f2a-bf9c-f8f0d5d56813" name="Conduct operational evaluation"
+              summary="The operational evaluation can be conducted at the manufacturer’s facility or at any location agreeable to the manufacturer and the FAA. The evaluation will stress typical flight training scenarios and tasks, verify adherence to criteria stated for each item required by this document, determine the acceptability of the device’s use for flight instruction in the procedural tasks listed in Appendix D, Training Content and Logging Provisions, and determine if the operating instructions for the trainer are adequate"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="aab6e770-8a4d-4f62-bb69-4cee7314b760" name="Advise the manufacturer of the changes or corrections necessary for the FAA’s reconsideration"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="31c71a3c-7788-4254-bd03-bfeffa6e958f" name="Implement changes of corrections necessary"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="125aaba5-e708-48f9-9bab-97aa6f20eb8a" name="Change ATD design"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="52e66634-6ad8-45cf-9f80-e2d19b22cc26" name="Evaluate changes to ATD for new approval"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="a665ed4b-cf52-4351-8efe-65e4673509e9" name="Renew LOA" summary="For those trainers with an LOA that will expire within 120 days, the manufacturer can apply for a new LOA. The manufacturer will need to reapply for FAA approval, to include the submission of an application letter and QAG verifying that the trainer model still meets the current criteria identified in this AC for ATD approvals"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="e091632f-4ccc-4366-b882-b41d73b8de8c" name="Verify ATD still meets the current criteria"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="2b51a5ec-3e57-49cc-ac3f-f8b7a97c2f15" name="Request" target="#05b1dc84-7193-4241-bcdd-c92e89d9791c"
+              source="#792fbedb-8471-4dfa-b09e-7bad8c604451"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="ae9ba981-c317-46cc-8b8d-ab98a4caa7f0" name="Inspection approved"
+              target="#dbfce548-ffb7-4dfb-b967-26df222fae63" source="#05b1dc84-7193-4241-bcdd-c92e89d9791c"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="73886a49-92f8-46b1-ae5f-eb81b4816221" name="Submit" summary="" description="&lt;p>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>To request FAA approval of an ATD, manufacturers should send the application letter &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>(see &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>Figure E-1&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>) with an accompanying Q&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>AG and operations manual requesting &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>evaluation to: &lt;/span>&lt;/p>&#xA;&#xA;&lt;p>&lt;span style=&quot;font-family:sans-serif; font-size:16px&quot;>&amp;bull;&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>9-AFS&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>-800-Correspondence@faa.gov. Send request with documents attached in word&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>text format (preferred), or&lt;/span>&lt;/p>&#xA;&#xA;&lt;p>&lt;span style=&quot;font-family:sans-serif; font-size:16px&quot;>&amp;bull;&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>FAA Flight Standards Service, General Aviation and Commercial Division, Airmen&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>Certification and T&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>raining Branch &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>(AFS&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>-810), 800 Independence Avenue, S.W.,&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>Washington, DC 20591.&lt;/span>&lt;/p>&#xA;"
+              target="#7939fac6-e79c-475f-b5aa-4dcf5dcada2e" source="#a84ba848-4791-4264-adda-c96885e609ec"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="59f08f4c-362e-418e-a190-01a3897b3218" name="Submit" description="&lt;p>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>To request FAA approval of an ATD, manufacturers should send the application letter &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>(see &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>Figure E-1&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>) with an accompanying Q&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>AG and operations manual requesting &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>evaluation to: &lt;/span>&lt;/p>&#xA;&#xA;&lt;p>&lt;span style=&quot;font-family:sans-serif; font-size:16px&quot;>&amp;bull;&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>9-AFS&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>-800-Correspondence@faa.gov. Send request with documents attached in word&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>text format (preferred), or&lt;/span>&lt;/p>&#xA;&#xA;&lt;p>&lt;span style=&quot;font-family:sans-serif; font-size:16px&quot;>&amp;bull;&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>FAA Flight Standards Service, General Aviation and Commercial Division, Airmen&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>Certification and T&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>raining Branch &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>(AFS&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>-810), 800 Independence Avenue, S.W.,&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>Washington, DC 20591.&lt;/span>&lt;/p>&#xA;"
+              target="#c4b39b6b-609e-48d6-85f1-19411e4e88cf" source="#23726278-c867-4a45-bee5-33a79ad350bb"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="5cb4713e-0f2d-4e20-a060-fc0873fb72b5" name="Review is deemed acceptable"
+              target="#d368626e-4c7d-47dd-8e66-b23983967b3b" source="#c4b39b6b-609e-48d6-85f1-19411e4e88cf"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="c339bee1-a555-4dbe-9560-9ed503a6a7ea" name="Review is deemed acceptable"
+              summary="the FAA will approve the QAG for the ATD configurations listed, and provide a LOA to the manufacturer"
+              target="#73f1f031-40f0-4e72-81e1-767cfc3e2d1a" source="#c4561e16-de72-4f2a-bf9c-f8f0d5d56813"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="f3decb90-2979-485d-b4e3-f20581e2e3ef" name="Schedule an Operational Evaluation"
+              target="#c4561e16-de72-4f2a-bf9c-f8f0d5d56813" source="#d368626e-4c7d-47dd-8e66-b23983967b3b"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="1a6b56f9-baf5-45c5-9138-8c4550a47479" name="Review is deemed acceptable"
+              target="#c4b39b6b-609e-48d6-85f1-19411e4e88cf" source="#7939fac6-e79c-475f-b5aa-4dcf5dcada2e"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="c01734ea-3abf-4b24-827a-008c4c2a9b51" name="Review is deemed unacceptable"
+              target="#aab6e770-8a4d-4f62-bb69-4cee7314b760" source="#c4561e16-de72-4f2a-bf9c-f8f0d5d56813"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="13086ec8-c91d-420c-89a6-290b9d926404" name="Provide changes and corrections necessary"
+              target="#31c71a3c-7788-4254-bd03-bfeffa6e958f" source="#aab6e770-8a4d-4f62-bb69-4cee7314b760"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="c9f6c8ba-4dc2-4631-a704-990cac76f03d" name="Conduct a followup functional evaluation"
+              target="#c4561e16-de72-4f2a-bf9c-f8f0d5d56813" source="#aab6e770-8a4d-4f62-bb69-4cee7314b760"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="557ade72-e8ec-4ccb-8bb6-530f5133a93c" name="Submit a revised QAG"
+              description="&lt;p>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>To request FAA approval of an ATD, manufacturers should send the application letter &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>(see &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>Figure E-1&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>) with an accompanying Q&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>AG and operations manual requesting &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>evaluation to: &lt;/span>&lt;/p>&#xA;&#xA;&lt;p>&lt;span style=&quot;font-family:sans-serif; font-size:16px&quot;>&amp;bull;&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>9-AFS&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>-800-Correspondence@faa.gov. Send request with documents attached in word&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>text format (preferred), or&lt;/span>&lt;/p>&#xA;&#xA;&lt;p>&lt;span style=&quot;font-family:sans-serif; font-size:16px&quot;>&amp;bull;&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>FAA Flight Standards Service, General Aviation and Commercial Division, Airmen&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>Certification and T&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>raining Branch &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>(AFS&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>-810), 800 Independence Avenue, S.W.,&lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>Washington, DC 20591.&lt;/span>&lt;/p>&#xA;"
+              target="#52e66634-6ad8-45cf-9f80-e2d19b22cc26" source="#125aaba5-e708-48f9-9bab-97aa6f20eb8a"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="158899fe-512b-47eb-b59d-dd6573d77a38" name="Submit Application Letter &amp; QAU"
+              target="#e091632f-4ccc-4366-b882-b41d73b8de8c" source="#a665ed4b-cf52-4351-8efe-65e4673509e9"/>
+        </ownedOperationalActivities>
+      </ownedFunctionPkg>
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg"
+          id="e0b4468e-d40c-4f58-9500-2beca0bc4de6" name="Operational Capabilities">
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="7e517fe4-f960-4dba-98b0-c55567f897ab" name="Defines Training Parameters">
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="fb6c268b-c8b5-46cd-8f48-2f63b5dc6ad8" involved="#12a7e49e-67c7-479e-82a5-1d970191e40f"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="f40613c3-2a7a-4d08-b1ee-2d2171ba5948" involved="#8d8b70db-34e9-4561-ab2c-5d6ca5aa1c16"/>
+        </ownedOperationalCapabilities>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="802eb944-8fdf-444f-9f3e-808385053088" name="Provides a simulated environment for training">
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="d70cd825-32a1-4409-9567-2567dbc032b7" involved="#c655779a-702d-4068-8722-1f384178399f"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="d23cde20-9138-482b-86d7-ce40a45d6206" involved="#12a7e49e-67c7-479e-82a5-1d970191e40f"/>
+        </ownedOperationalCapabilities>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="bb4a5073-29bf-470e-82e8-099e7f7d91e1" name="Monitors Students Performance">
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="37628c51-c54c-493e-9170-b76acbfeb1ba" involved="#12a7e49e-67c7-479e-82a5-1d970191e40f"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="d83d0ded-c3c3-470a-b80a-ea80bc6f94bd" involved="#8d8b70db-34e9-4561-ab2c-5d6ca5aa1c16"/>
+        </ownedOperationalCapabilities>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="8968bfe2-7832-4db9-8441-7be4d494bc1b" name="Defines Equipment Failures">
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="2ef94afc-db90-40b3-9d9d-37be7fed054b" involved="#12a7e49e-67c7-479e-82a5-1d970191e40f"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="e901c50b-7839-44e1-bedd-39ea26210dfd" involved="#8d8b70db-34e9-4561-ab2c-5d6ca5aa1c16"/>
+        </ownedOperationalCapabilities>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="87a45da6-3c3e-462e-8822-bda7bbd1b38e" name="Certify the Flight Simulator">
+          <ownedScenarios xsi:type="org.polarsys.capella.core.data.interaction:Scenario"
+              id="5afae38b-3fcf-4e6c-8c4f-683deb58791f" name="[OES] Certify the Flight Simulator"
+              kind="INTERACTION">
+            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
+                id="d191cbc5-76f6-4075-bda4-0e2d7a666835" name="Pilot Training Center"
+                representedInstance="#0fef1ef5-c69b-4d34-8c3b-c0f2dad5faf7"/>
+            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
+                id="19667e9e-4a43-41e4-aea9-e71c685497fc" name="Inspector"/>
+            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
+                id="6c335fa5-a47a-4eea-9fda-895d88f61645" name="Simulator" representedInstance="#adb49ac2-c14f-4b14-840d-1930e76b5559"/>
+            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
+                id="9d239037-a8d8-477f-9d21-7a46a29f8d16" name="Next Flight Tech"/>
+            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
+                id="9e48e470-1b8a-4c07-9242-b5d9f0cd6a87" name="Aviation Safety Inspector (ASI)"
+                representedInstance="#e2330636-f847-40d0-b27c-72c49abe88be"/>
+            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
+                id="fd69d93b-cfa9-4ee5-a186-3ae485a80ec7" name="Federal Aviation Administration (FAA)"
+                representedInstance="#bcf7da64-ec23-4100-b56e-1e72a6e51c5b"/>
+            <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
+                id="36df72f9-24a3-4cd9-afa6-c614951b4646" name="Air Training Device (ATD) Manufacturer"
+                representedInstance="#3b9f150e-f388-48f2-b921-a335f1dc9bbd"/>
+          </ownedScenarios>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="b923cc41-84ed-4a3b-97e3-fbd8773ef5b3" involved="#12a7e49e-67c7-479e-82a5-1d970191e40f"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="3c9de35b-d249-48fc-87c4-157814a7ed5e" involved="#673259db-f2cb-4a9d-8f2e-64960c978218"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="fe3a15a5-80a8-4973-9156-a6d3873235f9" involved="#9706125c-439c-433e-a146-0e21ec89eb12"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="85c32203-8593-48ac-998e-c12c3366dbfe" involved="#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="47f40ce3-b3a6-4112-a1f3-eae8b03d7455" involved="#ebb518b3-b5c0-43c8-a17b-0e880147699a"/>
+        </ownedOperationalCapabilities>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="d579f21e-43b6-4966-aab9-e0528699fd2a" name="Provides instructors environment for training">
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="0eb6ce4f-c4ea-4f8f-880d-89e0d30d0ad5" involved="#12a7e49e-67c7-479e-82a5-1d970191e40f"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="03456c19-1e4d-429f-9f87-7ff4a8344ea6" involved="#8d8b70db-34e9-4561-ab2c-5d6ca5aa1c16"/>
+        </ownedOperationalCapabilities>
+      </ownedAbstractCapabilityPkg>
+      <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+          id="2881107a-8af0-4fa3-86d5-72f502502046" name="Interfaces"/>
+      <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+          id="361ffa04-f384-42e7-8063-5a8bc042b633" name="Data"/>
+      <ownedRolePkg xsi:type="org.polarsys.capella.core.data.oa:RolePkg" id="2835d912-5cea-4844-bfed-43683cc11af3"
+          name="Roles">
+        <ownedRoles xsi:type="org.polarsys.capella.core.data.oa:Role" id="19b1d825-78b3-46a6-aa6a-0c093a754c1e"
+            name="General Aviation and Commercial Division" summary="https://www.faa.gov/about/office_org/headquarters_offices/avs/offices/afx/afs/afs800/afs830">
+          <ownedActivityAllocations xsi:type="org.polarsys.capella.core.data.oa:ActivityAllocation"
+              id="10594131-ca89-4712-82e2-70409754f20a" targetElement="#7939fac6-e79c-475f-b5aa-4dcf5dcada2e"
+              sourceElement="#19b1d825-78b3-46a6-aa6a-0c093a754c1e"/>
+          <ownedActivityAllocations xsi:type="org.polarsys.capella.core.data.oa:ActivityAllocation"
+              id="6dd31f40-1bfb-43a8-b0ff-afae825f705e" targetElement="#73f1f031-40f0-4e72-81e1-767cfc3e2d1a"
+              sourceElement="#19b1d825-78b3-46a6-aa6a-0c093a754c1e"/>
+        </ownedRoles>
+        <ownedRoles xsi:type="org.polarsys.capella.core.data.oa:Role" id="abba5440-71c0-45ba-93c1-4e2c9077af34"
+            name="Airman Certification and Training Branch">
+          <ownedActivityAllocations xsi:type="org.polarsys.capella.core.data.oa:ActivityAllocation"
+              id="8a5d7b12-5790-47f6-a924-861a59ebc745" targetElement="#d368626e-4c7d-47dd-8e66-b23983967b3b"
+              sourceElement="#abba5440-71c0-45ba-93c1-4e2c9077af34"/>
+          <ownedActivityAllocations xsi:type="org.polarsys.capella.core.data.oa:ActivityAllocation"
+              id="4aa7c742-0828-4dc0-af46-04687acb23b5" targetElement="#aab6e770-8a4d-4f62-bb69-4cee7314b760"
+              sourceElement="#abba5440-71c0-45ba-93c1-4e2c9077af34"/>
+        </ownedRoles>
+      </ownedRolePkg>
+      <ownedEntityPkg xsi:type="org.polarsys.capella.core.data.oa:EntityPkg" id="440e5d3c-f8cc-46b9-becd-30c9812a60e2"
+          name="Operational Entities">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="adb49ac2-c14f-4b14-840d-1930e76b5559"
+            name="Simulator" abstractType="#12a7e49e-67c7-479e-82a5-1d970191e40f"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="0fef1ef5-c69b-4d34-8c3b-c0f2dad5faf7"
+            name="Pilot Training Center" abstractType="#673259db-f2cb-4a9d-8f2e-64960c978218"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="3b9f150e-f388-48f2-b921-a335f1dc9bbd"
+            name="Air Training Device (ATD) Manufacturer" abstractType="#9706125c-439c-433e-a146-0e21ec89eb12"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="bcf7da64-ec23-4100-b56e-1e72a6e51c5b"
+            name="Federal Aviation Administration (FAA)" abstractType="#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
+        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.oa:CommunicationMean"
+            id="94ddc588-b14b-4ec5-9154-0945699ed1bc" name="Conduct an on-site functional evaluation of the training device"
+            source="#ebb518b3-b5c0-43c8-a17b-0e880147699a" target="#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="12a7e49e-67c7-479e-82a5-1d970191e40f"
+            name="Simulator">
+          <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+              id="9d1d62ed-4267-4675-bf70-22074c5a42a2" name="AC 61-136B" summary="AATD"
+              constrainedElements="#12a7e49e-67c7-479e-82a5-1d970191e40f">
+            <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
+                id="94c39b30-b8ad-4e61-97b3-2b41bb4f3f6c">
+              <bodies></bodies>
+              <languages>capella:linkedText</languages>
+            </ownedSpecification>
+          </ownedConstraints>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="24766612-5b3e-4285-8c51-559436a1e8d7"
+              name="OE 2: Simulation Computer" abstractType="#e28c1297-05a1-415d-b3c9-9b297372512e"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c4839a6a-dbc7-442d-ab7f-2b0a553af426"
+              name="OE 1: Cabin" abstractType="#4c8a6d8a-30dc-4ef9-bb3d-8807061311ec"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a19dc5c6-61a8-45fa-b56c-7f839472bd54"
+              name="OE 3: Power System" abstractType="#890baf3a-cb90-4719-8860-e4b124a1ba6e"/>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="e28c1297-05a1-415d-b3c9-9b297372512e"
+              name="OE 2: Simulation Computer"/>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="4c8a6d8a-30dc-4ef9-bb3d-8807061311ec"
+              name="OE 1: Cabin">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="51146eca-c06b-470c-9fe6-5c244d20fe45"
+                name="OE 1.1: Pilot Station" abstractType="#a434d41c-e8db-47c4-87fe-3a4b7ee9304f"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="904d78fc-0f2e-40bd-9ff2-e78c66cb0e18"
+                name="OE 1.2: Instructor station" abstractType="#c20ec16a-3e4a-420d-9cee-b3f23aaa7874"/>
+            <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="a434d41c-e8db-47c4-87fe-3a4b7ee9304f"
+                name="OE 1.1: Pilot Station"/>
+            <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="c20ec16a-3e4a-420d-9cee-b3f23aaa7874"
+                name="OE 1.2: Instructor station"/>
+          </ownedEntities>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="890baf3a-cb90-4719-8860-e4b124a1ba6e"
+              name="OE 3: Power System"/>
+          <ownedCommunicationMeans xsi:type="org.polarsys.capella.core.data.oa:CommunicationMean"
+              id="6ee51c73-3291-44cf-bc3d-9ec40c5ad45b" name="CM 1: WIFI - UDP" source="#c20ec16a-3e4a-420d-9cee-b3f23aaa7874"
+              target="#e28c1297-05a1-415d-b3c9-9b297372512e"/>
+        </ownedEntities>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="673259db-f2cb-4a9d-8f2e-64960c978218"
+            name="Pilot Training Center">
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="1c0f770d-f177-4d96-86f0-a353589ec8cf" targetElement="#792fbedb-8471-4dfa-b09e-7bad8c604451"
+              sourceElement="#673259db-f2cb-4a9d-8f2e-64960c978218"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="3adf5f60-c2fa-4d2f-be47-0e3263d49484"
+              name="Student Pilot" abstractType="#c655779a-702d-4068-8722-1f384178399f"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="95ccf64e-d54d-4f27-b2d8-1e15c92db407"
+              name="Instructor" abstractType="#8d8b70db-34e9-4561-ab2c-5d6ca5aa1c16"/>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="c655779a-702d-4068-8722-1f384178399f"
+              name="Student Pilot" actor="true" human="true"/>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="8d8b70db-34e9-4561-ab2c-5d6ca5aa1c16"
+              name="Instructor" actor="true" human="true"/>
+        </ownedEntities>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="9706125c-439c-433e-a146-0e21ec89eb12"
+            name="Air Training Device (ATD) Manufacturer" summary="ATD design and builder">
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="40f16b77-2f8f-4080-ad85-bafe935365e7" targetElement="#a84ba848-4791-4264-adda-c96885e609ec"
+              sourceElement="#9706125c-439c-433e-a146-0e21ec89eb12"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="0dff2b47-21d0-43a9-9a2b-df2fc37c9ecd" targetElement="#23726278-c867-4a45-bee5-33a79ad350bb"
+              sourceElement="#9706125c-439c-433e-a146-0e21ec89eb12"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="ba137096-aa4d-4f98-be6f-25da1c43b9e8" targetElement="#c4561e16-de72-4f2a-bf9c-f8f0d5d56813"
+              sourceElement="#9706125c-439c-433e-a146-0e21ec89eb12"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="67dd1e83-5fe2-45cc-b429-63747600e75c" targetElement="#31c71a3c-7788-4254-bd03-bfeffa6e958f"
+              sourceElement="#9706125c-439c-433e-a146-0e21ec89eb12"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="8faca46d-5e01-4738-bf90-815284217b55" targetElement="#125aaba5-e708-48f9-9bab-97aa6f20eb8a"
+              sourceElement="#9706125c-439c-433e-a146-0e21ec89eb12"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="40aac313-2f87-40d8-9f67-50f38f6aa9a4" targetElement="#a665ed4b-cf52-4351-8efe-65e4673509e9"
+              sourceElement="#9706125c-439c-433e-a146-0e21ec89eb12"/>
+        </ownedEntities>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="fcd56164-86b8-478d-9ab4-898c54ec74bc"
+            name="Federal Aviation Administration (FAA)">
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="0ad2fcb8-2762-4c82-b8ec-2b7774dfc4b6" targetElement="#c4b39b6b-609e-48d6-85f1-19411e4e88cf"
+              sourceElement="#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="e4820b38-6f74-4418-8f27-a61ac634131b" targetElement="#52e66634-6ad8-45cf-9f80-e2d19b22cc26"
+              sourceElement="#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="ae7b1c76-77a1-4cd9-8ab7-4a1cb3b581df" targetElement="#e091632f-4ccc-4366-b882-b41d73b8de8c"
+              sourceElement="#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e2330636-f847-40d0-b27c-72c49abe88be"
+              name="Aviation Safety Inspector (ASI)" abstractType="#ebb518b3-b5c0-43c8-a17b-0e880147699a"/>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="ebb518b3-b5c0-43c8-a17b-0e880147699a"
+              name="Aviation Safety Inspector (ASI)" actor="true" human="true"/>
+          <ownedRoleAllocations xsi:type="org.polarsys.capella.core.data.oa:RoleAllocation"
+              id="924eddea-80e6-4252-b08e-30def8a126a8" targetElement="#19b1d825-78b3-46a6-aa6a-0c093a754c1e"
+              sourceElement="#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
+          <ownedRoleAllocations xsi:type="org.polarsys.capella.core.data.oa:RoleAllocation"
+              id="9e336d28-d295-47b4-af51-2d4d4869b058" targetElement="#abba5440-71c0-45ba-93c1-4e2c9077af34"
+              sourceElement="#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
+        </ownedEntities>
+      </ownedEntityPkg>
+    </ownedArchitectures>
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.ctx:SystemAnalysis"
+        id="f3309bde-e517-4c45-bafc-fe478faca832" name="System Analysis">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemFunctionPkg"
+          id="f54920bd-6db4-49a0-8085-e1c421b4c686" name="System Functions">
+        <ownedSystemFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+            id="bd9d9297-de6b-47ef-bcc7-72cb46f21a4f" name="Root System Function">
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="65409ed7-5f13-4aef-a7cf-2d9a41a1fd51" name="Request Certification">
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="5b4832c6-a6de-4427-b356-498f602a381e" name="outRequest"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="45356aeb-a9f0-4f49-98a4-99ab2399fe5a" targetElement="#792fbedb-8471-4dfa-b09e-7bad8c604451"
+                sourceElement="#65409ed7-5f13-4aef-a7cf-2d9a41a1fd51"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="9415b895-7e6d-4c82-813a-76a1d67baae7" name="Approves Inspection">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="f5e650ce-2134-48b5-8d38-39343eeff755" name="inRequest"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="92809e93-c984-49e8-9d68-25fc7d4c38c3" name="outInspection approved"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="ad64b5fe-85cc-4e42-ae63-957b02fa2112" targetElement="#05b1dc84-7193-4241-bcdd-c92e89d9791c"
+                sourceElement="#9415b895-7e6d-4c82-813a-76a1d67baae7"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+              id="05e947bc-319f-4cc2-b2ff-249ae9982f52" name="Perform Inspection">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="28446cfb-c596-46b6-9b54-f6185ac18df1" name="inInspection approved"/>
+            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+                id="e26fee09-1a24-4371-ab14-856b8c1f1326" targetElement="#dbfce548-ffb7-4dfb-b967-26df222fae63"
+                sourceElement="#05e947bc-319f-4cc2-b2ff-249ae9982f52"/>
+          </ownedFunctions>
+          <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+              id="c2e957ff-8b9e-41fe-8ab4-973cf8bcce0c" targetElement="#196fc9ef-81bd-4b50-a743-b4e36462cbb3"
+              sourceElement="#bd9d9297-de6b-47ef-bcc7-72cb46f21a4f"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="fc74088c-1883-4574-bc4a-60c8b6a7cf00" name="Request" target="#f5e650ce-2134-48b5-8d38-39343eeff755"
+              source="#5b4832c6-a6de-4427-b356-498f602a381e">
+            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                id="a3db96bb-af90-4a6c-b3ba-3368f9c81286" targetElement="#2b51a5ec-3e57-49cc-ac3f-f8b7a97c2f15"
+                sourceElement="#fc74088c-1883-4574-bc4a-60c8b6a7cf00"/>
+          </ownedFunctionalExchanges>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="a5b454fd-f8a7-4cbe-8935-af8b45cda9f0" name="Inspection approved"
+              target="#28446cfb-c596-46b6-9b54-f6185ac18df1" source="#92809e93-c984-49e8-9d68-25fc7d4c38c3">
+            <ownedFunctionalExchangeRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchangeRealization"
+                id="da8c705f-3294-4de9-81ff-1e7315ad3201" targetElement="#ae9ba981-c317-46cc-8b8d-ab98a4caa7f0"
+                sourceElement="#a5b454fd-f8a7-4cbe-8935-af8b45cda9f0"/>
+          </ownedFunctionalExchanges>
+        </ownedSystemFunctions>
+      </ownedFunctionPkg>
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.ctx:CapabilityPkg"
+          id="9db5c38b-54e2-48c3-a996-be705895a52f" name="Capabilities">
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="52709663-1ac9-4adb-a96f-65c823a35b56" name="Defines Training Parameters">
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="ae7ad9ab-b734-4782-ad04-722906f2b678" targetElement="#f40613c3-2a7a-4d08-b1ee-2d2171ba5948"
+              sourceElement="#3ac0e1f1-d902-47b7-85cd-5f3345ad6eb4"/>
+          <ownedAbstractCapabilityRealizations xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityRealization"
+              id="be205e8e-c248-4c3e-a972-8ab15479221b" targetElement="#7e517fe4-f960-4dba-98b0-c55567f897ab"
+              sourceElement="#52709663-1ac9-4adb-a96f-65c823a35b56"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="3ac0e1f1-d902-47b7-85cd-5f3345ad6eb4" involved="#75ca8428-1f92-475c-af94-13b7aa5dcffd"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="a8dc7209-0cfc-449f-96de-73a847643d7e" name="Provides a simulated environment for training">
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="98ef1493-dab4-4eed-97f8-e8486e401889" targetElement="#d70cd825-32a1-4409-9567-2567dbc032b7"
+              sourceElement="#5932471d-fe5f-4be4-b9e6-d535a1ad18ef"/>
+          <ownedAbstractCapabilityRealizations xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityRealization"
+              id="7f4091dc-3008-4cd3-b06e-49746e60d7a1" targetElement="#802eb944-8fdf-444f-9f3e-808385053088"
+              sourceElement="#a8dc7209-0cfc-449f-96de-73a847643d7e"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="5932471d-fe5f-4be4-b9e6-d535a1ad18ef" involved="#ea072cdd-10d4-49d8-bc1b-2aa66febd9ee"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="382ebbd0-1d29-4879-bd02-ea51152b3597" name="Monitors Students Performance">
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="ec2a09ee-507d-4a61-973e-6a1f65efbef8" targetElement="#d83d0ded-c3c3-470a-b80a-ea80bc6f94bd"
+              sourceElement="#050f44d7-e124-4573-884b-284cd06f3a7b"/>
+          <ownedAbstractCapabilityRealizations xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityRealization"
+              id="c99735cb-dfee-4154-8348-78957280c2cf" targetElement="#bb4a5073-29bf-470e-82e8-099e7f7d91e1"
+              sourceElement="#382ebbd0-1d29-4879-bd02-ea51152b3597"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="050f44d7-e124-4573-884b-284cd06f3a7b" involved="#75ca8428-1f92-475c-af94-13b7aa5dcffd"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="a3ba834d-c013-4887-9363-6920c00a1471" name="Defines Equipment Failures">
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="9ab13802-708c-4a77-95c1-a144d4cd71d7" targetElement="#e901c50b-7839-44e1-bedd-39ea26210dfd"
+              sourceElement="#3d712412-71c4-4086-b876-d8b9d071584a"/>
+          <ownedAbstractCapabilityRealizations xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityRealization"
+              id="c6298731-3e32-4c20-9ac8-4e6a73805c30" targetElement="#8968bfe2-7832-4db9-8441-7be4d494bc1b"
+              sourceElement="#a3ba834d-c013-4887-9363-6920c00a1471"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="3d712412-71c4-4086-b876-d8b9d071584a" involved="#75ca8428-1f92-475c-af94-13b7aa5dcffd"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="c56936e5-6171-4f78-b173-0bb3e686bdfb" name="Certify the Flight Simulator">
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="989728fa-d2ba-42a4-b748-0e217a7bf338" targetElement="#3c9de35b-d249-48fc-87c4-157814a7ed5e"
+              sourceElement="#d35e19de-0330-40f3-b4ae-a1d8e5cdde18"/>
+          <ownedAbstractCapabilityRealizations xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityRealization"
+              id="d6390cb8-6f6f-474a-a50c-8eb3297ccf83" targetElement="#87a45da6-3c3e-462e-8822-bda7bbd1b38e"
+              sourceElement="#c56936e5-6171-4f78-b173-0bb3e686bdfb"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="d35e19de-0330-40f3-b4ae-a1d8e5cdde18" involved="#c2507e7b-0174-4fb9-9e3d-e2a51e1cb1a0"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="858704fe-8e4a-424d-b4f3-17bd97c8d8b8" name="Provides instructors environment for training">
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="dce82bf0-4d00-46aa-af8e-b5d41dc105ce" targetElement="#03456c19-1e4d-429f-9f87-7ff4a8344ea6"
+              sourceElement="#0ba31734-b932-481d-b795-18dbafe1e4d0"/>
+          <ownedAbstractCapabilityRealizations xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityRealization"
+              id="2d47288a-8842-4e33-bcf2-c7736febfd12" targetElement="#d579f21e-43b6-4966-aab9-e0528699fd2a"
+              sourceElement="#858704fe-8e4a-424d-b4f3-17bd97c8d8b8"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="0ba31734-b932-481d-b795-18dbafe1e4d0" involved="#75ca8428-1f92-475c-af94-13b7aa5dcffd"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="00f3fcb4-a6ed-430b-acb5-5cc9b69adf66" name="Provide Full Motion" summary="6 DOF"
+            review="Did not find this specifically in the AC 61-136B. Is this for a specific component in the pilot station?"
+            status="#f95b0734-fe12-446a-9661-a34d9b672d0a">
+          <extends xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityExtend"
+              id="210b0300-6e80-4c47-be1a-7b553bad57cd" extended="#831b7ffd-104d-4f0c-8505-76d53cfd491f"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="02b8a430-889b-4fc8-b34f-a8420213ac15" involved="#8397a760-fa94-4063-b820-2eead4815697"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="9a4153d0-4fc1-4fb3-a7ef-91ce62d54605" involved="#ea072cdd-10d4-49d8-bc1b-2aa66febd9ee"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="503f95a9-1420-40bc-97e7-bef6f7c8324c" name="Provides Controls, Avionics interface"
+            description="&lt;p>&lt;span style=&quot;font-family:serif; font-size:24px&quot;>physical flight and associated control systems must be &lt;/span>&lt;span style=&quot;font-family:serif; font-size:24px&quot;>recognizable as to their function and how they are to be manipulated solely &lt;/span>&lt;span style=&quot;font-family:serif; font-size:24px&quot;>from their appearance for the make and model of the aircraft being simulated.&lt;/span>&lt;/p>&#xA;&#xA;&lt;p>Derived from AC 61-136B Appendix B (9/12/18) part B.3.1&lt;/p>&#xA;&#xA;&lt;p>&amp;nbsp;&lt;/p>&#xA;&#xA;&lt;p>&amp;nbsp;&lt;/p>&#xA;"
+            review="Reviewed by [JS] found in AC 61-136B Appendix B (9/12/18) part B.3.1&#xD;&#xA;&#xD;&#xA;Do we want to leave it at this high level requirement or decompose it to the level provided in the AC?"
+            status="#44b9520b-8487-4e13-a786-5309587d04fd">
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="15b984f0-8fae-4976-9049-7ee443ecb4f6" involved="#8397a760-fa94-4063-b820-2eead4815697"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="2440dfb3-3eeb-41f2-8f11-03ea3f85284b" involved="#ea072cdd-10d4-49d8-bc1b-2aa66febd9ee"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="28dc403c-dc1e-4d06-9f60-9088e62933e1" name="Provide Force Feedback"
+            review="Should we derive per component as the detail is provided in AC 61-136B?"
+            status="#f95b0734-fe12-446a-9661-a34d9b672d0a">
+          <extends xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityExtend"
+              id="964d431f-aec5-4b94-8da6-647343f0938d" extended="#00f3fcb4-a6ed-430b-acb5-5cc9b69adf66"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="05483323-1bed-4c5a-a4d2-142765e7c2ba" involved="#8397a760-fa94-4063-b820-2eead4815697"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="6d4805c8-ff22-4a4e-9edb-0aabbcec6e8a" involved="#ea072cdd-10d4-49d8-bc1b-2aa66febd9ee"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="831b7ffd-104d-4f0c-8505-76d53cfd491f" name="Provides environment video"
+            review="Is this a entension of flight simulation? Why is it a standalone capability?"
+            status="#f95b0734-fe12-446a-9661-a34d9b672d0a">
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="1ccb0cea-13b8-42aa-9f31-bc1cb7c41258" involved="#8397a760-fa94-4063-b820-2eead4815697"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="c8951e5a-efdb-4993-933b-57b3eeaa0e16" involved="#ea072cdd-10d4-49d8-bc1b-2aa66febd9ee"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="213ec84f-16a9-47ca-9b31-546877f286e5" name="Provide cabin ambient lighing "
+            review="Does this pertain to: &quot;Note: The minimum instrument and equipment requirements specified under 14 CFR part 91, § 91.205 for day visual flight rules (VFR) and instrument flight rules (IFR) must be functional during the training session. This does not prohibit simulating failures for training purposes.&quot; From AC 61-136B Appendix B (9/12/18) part B.3.4.1?"
+            status="#f95b0734-fe12-446a-9661-a34d9b672d0a">
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="7a7e14ef-03c7-4dc8-803c-85eadd14f675" involved="#8397a760-fa94-4063-b820-2eead4815697"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="f4f4547f-318e-4acf-98fa-cbf81721d213" involved="#ea072cdd-10d4-49d8-bc1b-2aa66febd9ee"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="54bbab1f-c698-4b63-8f3d-f6f14a197485" name="System Pause" summary="for the purpose of administering instruction or procedural recommendations"
+            description="&lt;p>Derived from AC 61-136B Appendix B (9/12/18) part B.3.6.1&lt;/p>&#xA;"
+            review="Reviewed by [JS] found in AC 61-136B Appendix B (9/12/18) part B.3.6.1"
+            status="#c8cd14c4-1874-4d42-8284-48df0a1da7d1">
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="23a91974-0c00-481f-9ad9-95b38efc3928" included="#00f3fcb4-a6ed-430b-acb5-5cc9b69adf66"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="3bf1b9b5-8407-481a-9fcb-fc45155fb6cf" involved="#8397a760-fa94-4063-b820-2eead4815697"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="5e9e806f-ed32-4c3f-92e3-8097723119df" involved="#75ca8428-1f92-475c-af94-13b7aa5dcffd"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="c256f68a-09b8-45d0-ba2b-7a89e005b5b3" name="Flight Simulation" review="Reviewed by [JS]. Inclusion in providing instructor environment. Link is wrong"
+            status="#44b9520b-8487-4e13-a786-5309587d04fd">
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="352cf6c7-2652-4f9d-bfef-a9494975d780" included="#54bbab1f-c698-4b63-8f3d-f6f14a197485"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="3abf3775-b150-4635-90aa-90b82c3354d8" included="#f91c9a52-66f5-4a2a-8bb0-030341265071"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="5e11bf04-0e21-4934-bc47-2415e795ede3" included="#3ef13be0-e838-4950-b26a-6cd84202b2de"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="9766930a-43a5-4aa3-bd49-6b2486166b56" included="#dbee90d2-6c08-42a7-9ba4-2a8f3bedfcfe"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="0d22ddd2-84de-4c9b-90d8-781d43ab7788" included="#afd98300-d77b-4c8f-9b1b-b39c622cdbde"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="e7a5ac7d-52fe-4dee-9e39-78b41e8fbacb" involved="#8397a760-fa94-4063-b820-2eead4815697"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="f91c9a52-66f5-4a2a-8bb0-030341265071" name="Modiffy Initial State Parameters"
+            summary="Location, heading, Airspeed, Altitude, Wind Dir, speed, turbulence"
+            description="&lt;p>Derived from AC 61-136B Appendix B (9/12/18) part B.3.1.2&lt;/p>&#xA;"
+            review="Reviewed by [JS] found in AC 61-136B Appendix B (9/12/18) part B.3.1.2. Further info in B.3.6.2&#xD;&#xA;&#xD;&#xA;Instead of &quot;Modify initial state parameters&quot; suggest changing wording to modify virtual controls to align with B.3.1.2's definition"
+            status="#44b9520b-8487-4e13-a786-5309587d04fd">
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="4819d9d4-1aca-4079-b68f-a1bfa183f6fd" involved="#8397a760-fa94-4063-b820-2eead4815697"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="d93fe3c7-f380-45c6-8880-a1ae7279a775" involved="#75ca8428-1f92-475c-af94-13b7aa5dcffd"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="3ef13be0-e838-4950-b26a-6cd84202b2de" name="View, Record and Playback of H&amp;V tracks"
+            summary="both a horizontal and vertical track of aircraft movement during the entire training session; Oversee tracks along published airways, holding entries and patterns, and LOC and GS alignment/deviation (or other approaches with a horizontal and vertical track)."
+            description="&lt;p>Derived from AC 61-136B Appendix B (9/12/18) part B.3.6.3 &amp;amp; Derived from AC 61-136B Appendix B (9/12/18) part C.3.1.12&lt;/p>&#xA;"
+            review="Reviewed by [JS] found in AC 61-136B Appendix B (9/12/18) part B.3.6.3&#xD;&#xA;&#xD;&#xA;Reccomend breaking this into two seperate functions for recording during session and playback post session"
+            status="#e80ae472-28fe-469c-a4c2-903644568136">
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="bf9aa651-7b7a-4752-8cf9-12cb95ebb779" involved="#8397a760-fa94-4063-b820-2eead4815697"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="162683cd-81e5-4e84-8820-5d03392de2c8" involved="#75ca8428-1f92-475c-af94-13b7aa5dcffd"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="dbee90d2-6c08-42a7-9ba4-2a8f3bedfcfe" name="Failure Simulation" summary="his includes simulated engine failures and the following aircraft systems failures: alternator or generator, vacuum or pressure pump, pitot static, electronic flight displays, or landing gear or flaps, as appropriate"
+            description="&lt;p>Derived from AC 61-136B Appendix B (9/12/18) part B.3.6.4&lt;/p>&#xA;&#xA;&lt;p>&amp;nbsp;&lt;/p>&#xA;&#xA;&lt;p>Also mentioned in C.3.1.12: &amp;quot;&lt;span style=&quot;font-family:serif; font-size:16px&quot;>Invoke failures in navigation and instruments, radio receivers, &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>landing gear and flaps, engine power (partial and total), and other &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>aircraft systems (pitot, electric, static, etc.) by using either a &lt;/span>&lt;span style=&quot;font-family:serif; font-size:16px&quot;>keyboard or mouse.&amp;quot;&lt;/span>&lt;/p>&#xA;"
+            review="Reviewed by [JS] found in AC 61-136B Appendix B (9/12/18) part B.3.6.4&#xD;&#xA;&#xD;&#xA;Reccomend adding detail to capability as current wording is vague. Failure simulation prior to and during session for all instruments provided without stopping or freezing the simulation"
+            status="#44b9520b-8487-4e13-a786-5309587d04fd">
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="1dfa2519-c36f-4609-8a0f-e31c80608309" involved="#8397a760-fa94-4063-b820-2eead4815697"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="8c408afd-7499-4f0b-a0e1-ba08240ad816" involved="#75ca8428-1f92-475c-af94-13b7aa5dcffd"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="afd98300-d77b-4c8f-9b1b-b39c622cdbde" name="Navigational Database"
+            summary="To allow reinforcement of procedures learned during actual flight in that area.  All navigational data must be based on procedures as published per 14 CFR part 97."
+            description="&lt;p>Derived from AC 61-136B Appendix B (9/12/18) part B.3.6.5&lt;br />&#xA;&amp;nbsp;&lt;/p>&#xA;"
+            review="Reviewed by [JS] found in AC 61-136B Appendix B (9/12/18) part B.3.6.5&#xD;&#xA;&#xD;&#xA;"
+            status="#c8cd14c4-1874-4d42-8284-48df0a1da7d1">
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="6198a648-99b5-4dd7-9203-26a83775698a" involved="#8397a760-fa94-4063-b820-2eead4815697"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="24ba20c6-b198-4c96-ab1e-e537e5801fa1" name="Realistic Aircraft Cockpit">
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="b6cc9deb-6140-4ae7-9180-1c663a419be1" involved="#8397a760-fa94-4063-b820-2eead4815697"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="25d83af9-2030-4390-876f-3b608d6bfa65" involved="#ea072cdd-10d4-49d8-bc1b-2aa66febd9ee"/>
+        </ownedCapabilities>
+        <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
+            id="f901dd67-3d4d-401f-843d-7590fec3199f" name="Function as Air Traffic Control (ATC)"
+            summary="n providing vectors, etc., change in weather conditions, ceilings, visibilities, wind speed and direction, light/moderate/severe turbulence, and icing conditions"
+            description="&lt;p>Derived from AC 61-136B Appendix B (9/12/18) part C.3.1.12&lt;/p>&#xA;"
+            status="#e80ae472-28fe-469c-a4c2-903644568136">
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="47d001cc-9d7e-4352-ae7f-883e8deddd50" involved="#8397a760-fa94-4063-b820-2eead4815697"/>
+          <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
+              id="a686d9a1-c1ef-4258-b584-6d8644f11281" involved="#75ca8428-1f92-475c-af94-13b7aa5dcffd"/>
+        </ownedCapabilities>
+      </ownedAbstractCapabilityPkg>
+      <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+          id="0e2c107d-bffd-4413-8b00-d50a7c092e8b" name="Interfaces"/>
+      <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+          id="e59f4318-56a6-4bab-b4b3-a510f3a8fd1d" name="Data">
+        <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+            id="a73fcf9e-2c88-47a2-b863-1f84f380e483" name="Predefined Types">
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:BooleanType"
+              id="141efe2e-e6a8-46d0-8a92-bffe24bcf5ab" name="Boolean" visibility="PUBLIC">
+            <ownedLiterals xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralBooleanValue"
+                id="021286ba-932b-40dd-9398-fff8c2d1d747" name="True" abstractType="#141efe2e-e6a8-46d0-8a92-bffe24bcf5ab"
+                value="true"/>
+            <ownedLiterals xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralBooleanValue"
+                id="5be4ddf9-39a1-4352-b99b-f488a7e6abcd" name="False" abstractType="#141efe2e-e6a8-46d0-8a92-bffe24bcf5ab"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="63c29021-b861-4417-a33d-c7297b8d7fca" name="Byte" visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="096337bb-822a-48ae-9338-cf3fe7de0553" name="" abstractType="#63c29021-b861-4417-a33d-c7297b8d7fca"
+                value="0"/>
+            <ownedMaxValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="dfca36f0-5e6b-4ccc-9a8f-eaef0a200b2e" name="" abstractType="#63c29021-b861-4417-a33d-c7297b8d7fca"
+                value="255"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:StringType"
+              id="7cdeda24-a60a-44eb-bdf6-8f57cfb0f1b2" name="Char" visibility="PUBLIC">
+            <ownedMinLength xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="5aa12986-e5f3-4f95-998c-7f3645642055" name="" abstractType="#570c0254-4f3f-4518-b92c-d72cfa639670"
+                value="1"/>
+            <ownedMaxLength xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="8931556f-f1de-444f-a684-dad0c24e5d2c" name="" abstractType="#570c0254-4f3f-4518-b92c-d72cfa639670"
+                value="1"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="04fa0d59-b170-4539-be06-d7db8b1839bc" name="Double" discrete="false"
+              visibility="PUBLIC" kind="FLOAT"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="76721a78-c7d9-4e59-b6d8-5469a0ed8784" name="Float" discrete="false"
+              visibility="PUBLIC" kind="FLOAT"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="774b9080-8c32-48f5-97ac-058e1c2e8f36" name="Hexadecimal" visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="abf6eeb3-7e45-4d3b-82dc-9782acb51bd2" name="" abstractType="#774b9080-8c32-48f5-97ac-058e1c2e8f36"
+                value="0"/>
+            <ownedMaxValue xsi:type="org.polarsys.capella.core.data.information.datavalue:BinaryExpression"
+                id="3b87b868-fe15-47a5-84b0-e2de22b2b84b" abstractType="#774b9080-8c32-48f5-97ac-058e1c2e8f36"
+                operator="SUB">
+              <ownedLeftOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:BinaryExpression"
+                  id="6327d666-b97b-42cf-a997-858a03603aea" operator="POW">
+                <ownedLeftOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                    id="23cd0f28-3a15-4173-bf6b-44d167380332" value="2"/>
+                <ownedRightOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                    id="4d3ba21c-8c2a-4bd6-b938-ac5226732bba" value="64"/>
+              </ownedLeftOperand>
+              <ownedRightOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                  id="1b07e12b-bb84-4cea-a0a1-40a151b0f9e5" value="1"/>
+            </ownedMaxValue>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="4c07069a-4d9d-4056-ab3d-8984aab3a3ba" name="Integer" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="ca4a837f-9dc4-40b4-a1db-7fd4c0679e7d" name="Long" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="c1cf02ba-9d2a-4f00-8cec-c096a4d406fc" name="LongLong" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="3baf02b2-3252-41c7-ae65-e536bbad9b49" name="Short" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:StringType"
+              id="02694ae3-2cfa-4b99-a4ae-d16e70d275c2" name="String" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="2d0a28d9-8cb5-40d6-9584-72f1efad2ef4" name="UnsignedInteger" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="a954e0b4-4edf-40dd-9617-fbe36971d029" name="" abstractType="#2d0a28d9-8cb5-40d6-9584-72f1efad2ef4"
+                value="0"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="570c0254-4f3f-4518-b92c-d72cfa639670" name="UnsignedShort" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="e4921ed0-fc44-4df8-9ce2-f571d611397c" name="" abstractType="#570c0254-4f3f-4518-b92c-d72cfa639670"
+                value="0"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="df97dbaf-3878-4c3d-8efc-4050ce7854f3" name="UnsignedLong" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="97089443-9994-47d6-8385-01b0c729980c" name="" abstractType="#df97dbaf-3878-4c3d-8efc-4050ce7854f3"
+                value="0"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="6f8a7888-ec29-4202-aaa9-91dffc2b9ca2" name="UnsignedLongLong" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="f71b9092-6a8f-4c5c-95ca-d520a3141461" name="" abstractType="#6f8a7888-ec29-4202-aaa9-91dffc2b9ca2"
+                value="0"/>
+          </ownedDataTypes>
+        </ownedDataPkgs>
+      </ownedDataPkg>
+      <ownedSystemComponentPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemComponentPkg"
+          id="f4dc7913-1d40-4fd4-a428-cb93487697d2" name="Structure">
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="9aacb864-0813-4ef2-973e-99e1a58d4cb4" targetElement="#95ccf64e-d54d-4f27-b2d8-1e15c92db407"
+            sourceElement="#2570c42a-d0e4-4a72-94c7-5fa342c91895"/>
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="adf6f208-3939-4ccb-b51d-9f747cc18f85" targetElement="#3adf5f60-c2fa-4d2f-be47-0e3263d49484"
+            sourceElement="#5bf7dbd9-913a-4449-8d90-e07200f76fc2"/>
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="143a8e98-a8dd-41a8-9b95-58907fe75ff2" targetElement="#0fef1ef5-c69b-4d34-8c3b-c0f2dad5faf7"
+            sourceElement="#34e807ea-2a95-4d89-84bd-33b601644896"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="b8430eef-daf3-492f-b207-ec7ac0246d53"
+            name="System" abstractType="#8397a760-fa94-4063-b820-2eead4815697"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="2570c42a-d0e4-4a72-94c7-5fa342c91895"
+            name="Instructor" abstractType="#75ca8428-1f92-475c-af94-13b7aa5dcffd"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="5bf7dbd9-913a-4449-8d90-e07200f76fc2"
+            name="Student Pilot" abstractType="#ea072cdd-10d4-49d8-bc1b-2aa66febd9ee"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="34e807ea-2a95-4d89-84bd-33b601644896"
+            name="Pilot Training Center" abstractType="#c2507e7b-0174-4fb9-9e3d-e2a51e1cb1a0"/>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="8397a760-fa94-4063-b820-2eead4815697" name="System">
+          <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
+              id="b5812e10-b3c4-41c1-8ed0-f5a0f2adaa7e" name="System State Machine">
+            <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                id="b9578d32-0f12-4672-91e7-a8f6e9745495" name="Default Region"/>
+          </ownedStateMachines>
+        </ownedSystemComponents>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="75ca8428-1f92-475c-af94-13b7aa5dcffd" name="Instructor" actor="true">
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="9041aa25-967b-4fb3-aa33-08f1b18ef2fb" targetElement="#8d8b70db-34e9-4561-ab2c-5d6ca5aa1c16"
+              sourceElement="#75ca8428-1f92-475c-af94-13b7aa5dcffd"/>
+        </ownedSystemComponents>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="ea072cdd-10d4-49d8-bc1b-2aa66febd9ee" name="Student Pilot" actor="true">
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="2c1cafd7-051d-4adc-bf92-08c3be5207eb" targetElement="#c655779a-702d-4068-8722-1f384178399f"
+              sourceElement="#ea072cdd-10d4-49d8-bc1b-2aa66febd9ee"/>
+        </ownedSystemComponents>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="c2507e7b-0174-4fb9-9e3d-e2a51e1cb1a0" name="Pilot Training Center"
+            actor="true">
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="412e1ce5-d5c6-4988-b9e6-f78ba98f03df" targetElement="#673259db-f2cb-4a9d-8f2e-64960c978218"
+              sourceElement="#c2507e7b-0174-4fb9-9e3d-e2a51e1cb1a0"/>
+        </ownedSystemComponents>
+      </ownedSystemComponentPkg>
+      <ownedMissionPkg xsi:type="org.polarsys.capella.core.data.ctx:MissionPkg" id="55991a26-43ce-481a-a5ee-4da68a361d83"
+          name="Missions">
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="d5d00d98-ab9f-48c3-bb6a-dabba930f217" targetElement="#802eb944-8fdf-444f-9f3e-808385053088"
+            sourceElement="#70bdbb9d-cc27-407b-ba81-1a097115a9cd"/>
+        <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+            id="06401eef-36ee-42ec-a7da-a2197e3ae5dc" targetElement="#d579f21e-43b6-4966-aab9-e0528699fd2a"
+            sourceElement="#67ea3688-c798-45bc-9158-3e41fbe766f5"/>
+        <ownedMissions xsi:type="org.polarsys.capella.core.data.ctx:Mission" id="70bdbb9d-cc27-407b-ba81-1a097115a9cd"
+            name="Provides a simulated environment for training">
+          <ownedCapabilityExploitations xsi:type="org.polarsys.capella.core.data.ctx:CapabilityExploitation"
+              id="062ce658-f58c-415c-b24a-68181941fc48" capability="#00f3fcb4-a6ed-430b-acb5-5cc9b69adf66"/>
+          <ownedCapabilityExploitations xsi:type="org.polarsys.capella.core.data.ctx:CapabilityExploitation"
+              id="50cc85ca-a30c-44c7-8304-e6f0f056ac04" capability="#503f95a9-1420-40bc-97e7-bef6f7c8324c"/>
+          <ownedCapabilityExploitations xsi:type="org.polarsys.capella.core.data.ctx:CapabilityExploitation"
+              id="28ff6182-eda6-4814-a6aa-2114a0976e6b" capability="#28dc403c-dc1e-4d06-9f60-9088e62933e1"/>
+          <ownedCapabilityExploitations xsi:type="org.polarsys.capella.core.data.ctx:CapabilityExploitation"
+              id="4aac9f77-bb86-4d1b-86f0-106b97072ca1" capability="#831b7ffd-104d-4f0c-8505-76d53cfd491f"/>
+          <ownedCapabilityExploitations xsi:type="org.polarsys.capella.core.data.ctx:CapabilityExploitation"
+              id="bba8695b-a6e7-4a3a-9594-e94d3d627d3f" capability="#213ec84f-16a9-47ca-9b31-546877f286e5"/>
+          <ownedCapabilityExploitations xsi:type="org.polarsys.capella.core.data.ctx:CapabilityExploitation"
+              id="dcc9bfae-dc58-4206-a4dc-9e58dfaf48b5" capability="#c256f68a-09b8-45d0-ba2b-7a89e005b5b3"/>
+          <ownedCapabilityExploitations xsi:type="org.polarsys.capella.core.data.ctx:CapabilityExploitation"
+              id="3fffa894-5469-47e8-8082-03b56e226b80" capability="#afd98300-d77b-4c8f-9b1b-b39c622cdbde"/>
+          <ownedCapabilityExploitations xsi:type="org.polarsys.capella.core.data.ctx:CapabilityExploitation"
+              id="46ba81a0-9764-45ec-81ea-856bc60d2719" capability="#24ba20c6-b198-4c96-ab1e-e537e5801fa1"/>
+        </ownedMissions>
+        <ownedMissions xsi:type="org.polarsys.capella.core.data.ctx:Mission" id="67ea3688-c798-45bc-9158-3e41fbe766f5"
+            name="Provides instructors environment for training" description="&lt;p>Derived from AC 61-136B Appendix B (9/12/18) part B.3.1.2 &amp;amp; C.3.1.12&lt;/p>&#xA;"
+            review="Reviewed by [JS] found in AC 61-136B Appendix B (9/12/18) part B.3.1.2.&#xD;&#xA;&#xD;&#xA;What do you think of using the word &quot;Station&quot; instead of &quot;environment&quot;. I think it is a bit more clear in english in terms that it is a permanent physical location is to be provided as environment could mean software of hardware on event as well"
+            status="#c8cd14c4-1874-4d42-8284-48df0a1da7d1">
+          <ownedCapabilityExploitations xsi:type="org.polarsys.capella.core.data.ctx:CapabilityExploitation"
+              id="8dfe3825-d68c-4b0a-a474-614fe08dcc10" capability="#54bbab1f-c698-4b63-8f3d-f6f14a197485"/>
+          <ownedCapabilityExploitations xsi:type="org.polarsys.capella.core.data.ctx:CapabilityExploitation"
+              id="3a8fc78e-fb4a-47b9-8f6d-82ef9d606292" capability="#f91c9a52-66f5-4a2a-8bb0-030341265071"/>
+          <ownedCapabilityExploitations xsi:type="org.polarsys.capella.core.data.ctx:CapabilityExploitation"
+              id="1c789133-f918-44c4-a7c2-7cd0327e0abf" capability="#3ef13be0-e838-4950-b26a-6cd84202b2de"/>
+          <ownedCapabilityExploitations xsi:type="org.polarsys.capella.core.data.ctx:CapabilityExploitation"
+              id="e3ea296b-73f9-4e20-a6af-9843979137c8" capability="#dbee90d2-6c08-42a7-9ba4-2a8f3bedfcfe"/>
+          <ownedCapabilityExploitations xsi:type="org.polarsys.capella.core.data.ctx:CapabilityExploitation"
+              id="1c3b8caa-879d-4bfe-ad17-7523fbc07c23" capability="#f901dd67-3d4d-401f-843d-7590fec3199f"/>
+        </ownedMissions>
+      </ownedMissionPkg>
+      <ownedOperationalAnalysisRealizations xsi:type="org.polarsys.capella.core.data.ctx:OperationalAnalysisRealization"
+          id="6f271e85-0dc1-47ab-b242-98a938ebb4ea" targetElement="#163c2744-c6c9-437f-af0e-7cb2789ba8a7"
+          sourceElement="#f3309bde-e517-4c45-bafc-fe478faca832"/>
+    </ownedArchitectures>
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.la:LogicalArchitecture"
+        id="4dd59fb9-bdbf-4ec9-9516-5dadb63a8a39" name="Logical Architecture">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.la:LogicalFunctionPkg"
+          id="15b55f51-93b0-4a4b-9f59-3194fc5373ab" name="Logical Functions">
+        <ownedLogicalFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+            id="eb8c1acd-37e0-403d-bc2e-3bb43cdef644" name="Root Logical Function">
+          <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+              id="dcbf3508-92c6-47f4-afb3-3f4885e041c6" targetElement="#bd9d9297-de6b-47ef-bcc7-72cb46f21a4f"
+              sourceElement="#eb8c1acd-37e0-403d-bc2e-3bb43cdef644"/>
+        </ownedLogicalFunctions>
+      </ownedFunctionPkg>
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
+          id="d5062ea4-689b-4b2d-a356-e0099d44a7fa" name="Capabilities"/>
+      <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+          id="ec425468-2864-4389-8cf0-681212ae2bab" name="Interfaces"/>
+      <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+          id="b75e7117-828d-4647-8a4c-a303c10f613c" name="Data"/>
+      <ownedLogicalComponentPkg xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
+          id="9415b689-1d6e-4daa-860d-85e0a96cd87c" name="Structure">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="75ab6cc7-0734-4749-832b-eb5a2e312fc0"
+            name="Logical System" abstractType="#7850dea2-dc2a-406d-9299-89f9ff388ea4"/>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="7850dea2-dc2a-406d-9299-89f9ff388ea4" name="Logical System">
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="01243d9e-632c-4e31-9d3d-1f863253481d" targetElement="#8397a760-fa94-4063-b820-2eead4815697"
+              sourceElement="#7850dea2-dc2a-406d-9299-89f9ff388ea4"/>
+        </ownedLogicalComponents>
+      </ownedLogicalComponentPkg>
+      <ownedSystemAnalysisRealizations xsi:type="org.polarsys.capella.core.data.la:SystemAnalysisRealization"
+          id="5e3b4e39-3539-46fa-b478-f1e789b20341" targetElement="#f3309bde-e517-4c45-bafc-fe478faca832"
+          sourceElement="#4dd59fb9-bdbf-4ec9-9516-5dadb63a8a39"/>
+    </ownedArchitectures>
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.pa:PhysicalArchitecture"
+        id="0c3941d7-aa89-445e-89c7-a65aa34dc310" name="Physical Architecture">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunctionPkg"
+          id="b0c5c29f-cc37-431e-8c4c-8d0e9452a253" name="Physical Functions">
+        <ownedPhysicalFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+            id="b3f6981f-bd09-43ba-99b3-0e8ad4425397" name="Root Physical Function">
+          <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+              id="4cb10178-b640-4b6f-bcf0-054ea99f1874" targetElement="#eb8c1acd-37e0-403d-bc2e-3bb43cdef644"
+              sourceElement="#b3f6981f-bd09-43ba-99b3-0e8ad4425397"/>
+        </ownedPhysicalFunctions>
+      </ownedFunctionPkg>
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
+          id="fe1d95b7-1f72-4551-b16c-4dbeff88b92b" name="Capabilities"/>
+      <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+          id="c2c9b672-308b-4003-8390-35c8ed303a3b" name="Interfaces"/>
+      <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+          id="ad79221b-bb5e-40cb-b577-2a617a3689f6" name="Data"/>
+      <ownedPhysicalComponentPkg xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponentPkg"
+          id="7df9305e-1ad6-4dd3-9999-3b72cdf6a8f5" name="Structure">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="ce5fcab6-ea22-4d8d-90c2-9aa120e0152f"
+            name="Physical System" abstractType="#7ac027d8-1bba-476a-933a-3940f42cb176"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="6b3b2462-e7a1-4cc1-a7a3-0d0873f6f5cf"
+            name="No-SoI Physical Component" abstractType="#65e8c3d2-2250-4779-a443-1e2f78e78740"/>
+        <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+            id="7ac027d8-1bba-476a-933a-3940f42cb176" name="Physical System">
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="0103342a-e27c-47ae-8857-ed22618ad899"
+              name="Simulation computer" abstractType="#bd54e93f-0a27-4144-bbd4-5ba3e16d3eaf"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="0a922bfb-7114-4d14-864c-f053b776cbd5"
+              name="3 DOF Cabin" abstractType="#f90afd7b-d9c5-4324-9c36-ecb74593d61c"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="68ac9fc7-fba8-497d-9521-280f561f06f2"
+              name="Display System" abstractType="#d6296a5f-dc27-4ae6-b5c5-579fe2240ec5"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="aa4922d9-d726-409e-826f-04a75b07abed"
+              name="Power Supply" abstractType="#14cc8427-7b89-45e3-8059-0b2836f65d3f"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="0c1f81de-b6ae-4be4-86ed-f8ff3d2342a0"
+              name="SoI Physical Component" abstractType="#f6302bdd-bf79-464b-9119-275d405f8492"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="4845240c-7ff8-441f-9b3f-bc79710b0320"
+              name="No-SoI Software Component" abstractType="#4039171b-5b27-4d50-911b-86c8f2dc97f1"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="307b289d-3bfb-48b4-9051-688873e10b47"
+              name="Flight Simulator Software" abstractType="#a90275c5-6b94-40c6-849e-a1dd4a35115c"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a2039184-f85a-4e7d-87ba-e4c5ddf2d17a"
+              name="Video Encoder" abstractType="#cb00ead5-7a95-4775-b18c-e162ee1ca953"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="ba4a2b36-0896-435d-a5c4-21bfe3475860"
+              name="IOS" abstractType="#7ab083b5-0fa7-414a-a40e-ce4a98dc1544"/>
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="092b2cfb-e0a4-4bda-8137-746f850188ed" targetElement="#7850dea2-dc2a-406d-9299-89f9ff388ea4"
+              sourceElement="#7ac027d8-1bba-476a-933a-3940f42cb176"/>
+          <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+              id="e3e5a9a1-e564-4c62-a77c-80b0fb106fae" name="AC 220V" linkEnds="#8d5c804f-6a6d-4564-bb19-b834a71ffcbf #8dea192c-a796-4100-9d8a-6163ebbb6fd5"/>
+          <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+              id="328efc19-6898-4796-857b-f332279317ea" name="AC 220V" linkEnds="#a6902979-6fa5-4833-ab21-59b2b6f18e73 #b3a63ede-ee13-4357-813b-f427b2d076b0"/>
+          <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+              id="5d8a6bef-346b-448e-bd2b-1a0dec3eca3b" name="AC 220V" linkEnds="#2ab7b604-6e2d-4eb1-8cca-7600cf37c69e #b0f1036c-3031-416c-a796-5809461d188e"/>
+          <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+              id="c0ca3433-b24a-4f2d-b09c-d64c3c22445b" name="PL 4" linkEnds="#449ee580-4209-4942-aac0-dfff3a2a4ed7 #6f77a858-79aa-4239-ac29-6cb1ed110fc3"/>
+          <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+              id="d5390e77-ff82-4e4a-ac9a-d85fa5edec40" name="PL 5" linkEnds="#1c1f0159-228f-4f9b-8d15-1d96f912262f #68edb82b-8a44-41fe-a899-489f88288b67"/>
+          <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+              id="f04900e0-7a80-496e-aa02-4573cc22f491" name="PL 6" linkEnds="#a122048c-b38e-4fb1-8c9e-e25417f340cc #cb0882a0-b529-4700-b3cb-b3b939138ad5"/>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="bd54e93f-0a27-4144-bbd4-5ba3e16d3eaf" name="Simulation computer"
+              nature="NODE">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="b0f1036c-3031-416c-a796-5809461d188e" name="PP 1"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="449ee580-4209-4942-aac0-dfff3a2a4ed7" name="PP 2"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="1c1f0159-228f-4f9b-8d15-1d96f912262f" name="PP 3"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e4201093-629a-4daa-b424-85e8679df827"
+                name="Computer" abstractType="#a1752b95-4ada-480c-ad2d-b3db4d3cf4dd">
+              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                  id="adaecfd3-5573-4f79-bf85-c4a19f16d308" deployedElement="#307b289d-3bfb-48b4-9051-688873e10b47"
+                  location="#e4201093-629a-4daa-b424-85e8679df827"/>
+              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                  id="76c9ab66-0098-45fe-bb2f-a06e32ce89f1" deployedElement="#a2039184-f85a-4e7d-87ba-e4c5ddf2d17a"
+                  location="#e4201093-629a-4daa-b424-85e8679df827"/>
+            </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="cb0882a0-b529-4700-b3cb-b3b939138ad5" name="PP 5"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="a1752b95-4ada-480c-ad2d-b3db4d3cf4dd" name="Computer" nature="NODE">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e5a6a36f-8a6f-41c5-9e31-9c999aab5d8e"
+                  name="Video Card" abstractType="#d9aaccb3-e7cb-48f3-82d2-00c60d1a525c"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="64d6450e-e80e-4d7f-8b21-9e1be7f446a3"
+                  name="I/O interface" abstractType="#e34c500b-73a5-445b-9fff-7e8675688051"/>
+              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                  id="d9aaccb3-e7cb-48f3-82d2-00c60d1a525c" name="Video Card" nature="NODE"/>
+              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                  id="e34c500b-73a5-445b-9fff-7e8675688051" name="I/O interface" nature="NODE"/>
+            </ownedPhysicalComponents>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="f90afd7b-d9c5-4324-9c36-ecb74593d61c" name="3 DOF Cabin" nature="NODE">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="b3a63ede-ee13-4357-813b-f427b2d076b0" name="PP 1"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="6f77a858-79aa-4239-ac29-6cb1ed110fc3" name="PP 2"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="90a2d3ac-1340-418f-8d3d-91d3048225cb"
+                name="PC 1: Movement System" abstractType="#3cadf4b3-3f54-4eec-93e4-b332c6530557"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="5962d0f3-f5da-464c-b1ab-8c1be6f2fe01"
+                name="PC 1: Plane Cabin" abstractType="#d6897a9c-959b-41bf-bdc7-65b4ebdbafdd"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="3cadf4b3-3f54-4eec-93e4-b332c6530557" name="PC 1: Movement System"
+                nature="NODE">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="56bffd35-8324-414f-9564-98d5f89cdaa1"
+                  name="PC 1: Actuators" abstractType="#228b87f7-5a08-4e25-9db1-dd79496da4ca"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="717fc3f2-0c5d-4453-909a-6e9b87364c3d"
+                  name="PC 2: Driver" abstractType="#d73f94ed-76ef-49f9-a814-a7d3030724a9"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e3e25731-f94b-440d-a99b-649573dbccbb"
+                  name="PC 3: Power System" abstractType="#63c4095b-9cf8-492a-8594-589b11df8645"/>
+              <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                  id="946b7785-c648-46e3-8908-1a250ae70a46" name="PL 1" linkEnds="#a093885f-f10f-45f0-b566-de6c56dbd0aa #96fdbd82-74a3-4059-9425-cde1baa50528"/>
+              <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                  id="29f9548f-aa5a-49d8-a36f-4079745ef683" name="PL 2" linkEnds="#a8a8b811-ebbb-4fc1-a809-52124ffe7609 #0bb9cd50-774a-4872-ae19-9565c45259fd"/>
+              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                  id="228b87f7-5a08-4e25-9db1-dd79496da4ca" name="PC 1: Actuators"
+                  nature="NODE">
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                    id="96fdbd82-74a3-4059-9425-cde1baa50528" name="PP 1"/>
+              </ownedPhysicalComponents>
+              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                  id="d73f94ed-76ef-49f9-a814-a7d3030724a9" name="PC 2: Driver" nature="NODE">
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                    id="a093885f-f10f-45f0-b566-de6c56dbd0aa" name="PP 1"/>
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                    id="0bb9cd50-774a-4872-ae19-9565c45259fd" name="PP 2"/>
+              </ownedPhysicalComponents>
+              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                  id="63c4095b-9cf8-492a-8594-589b11df8645" name="PC 3: Power System"
+                  nature="NODE">
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                    id="a8a8b811-ebbb-4fc1-a809-52124ffe7609" name="PP 1"/>
+              </ownedPhysicalComponents>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="d6897a9c-959b-41bf-bdc7-65b4ebdbafdd" name="PC 1: Plane Cabin"
+                nature="NODE"/>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="d6296a5f-dc27-4ae6-b5c5-579fe2240ec5" name="Display System" nature="NODE">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="8dea192c-a796-4100-9d8a-6163ebbb6fd5" name="PP 1"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="68edb82b-8a44-41fe-a899-489f88288b67" name="PP 2"/>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="14cc8427-7b89-45e3-8059-0b2836f65d3f" name="Power Supply" nature="NODE">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="8d5c804f-6a6d-4564-bb19-b834a71ffcbf" name="PP 1"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="a6902979-6fa5-4833-ab21-59b2b6f18e73" name="PP 2"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="2ab7b604-6e2d-4eb1-8cca-7600cf37c69e" name="PP 3"/>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="f6302bdd-bf79-464b-9119-275d405f8492" name="SoI Physical Component"
+              nature="NODE"/>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="4039171b-5b27-4d50-911b-86c8f2dc97f1" name="No-SoI Software Component"
+              nature="BEHAVIOR"/>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="a90275c5-6b94-40c6-849e-a1dd4a35115c" name="Flight Simulator Software"
+              nature="BEHAVIOR"/>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="cb00ead5-7a95-4775-b18c-e162ee1ca953" name="Video Encoder" nature="BEHAVIOR"/>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="7ab083b5-0fa7-414a-a40e-ce4a98dc1544" summary="Instructors Station"
+              name="IOS" nature="NODE">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="a122048c-b38e-4fb1-8c9e-e25417f340cc" name="PP 1"/>
+          </ownedPhysicalComponents>
+        </ownedPhysicalComponents>
+        <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+            id="65e8c3d2-2250-4779-a443-1e2f78e78740" name="No-SoI Physical Component"
+            actor="true" nature="NODE"/>
+      </ownedPhysicalComponentPkg>
+      <ownedLogicalArchitectureRealizations xsi:type="org.polarsys.capella.core.data.pa:LogicalArchitectureRealization"
+          id="ffd28771-a3ae-41a3-b1c1-e311f5d6c601" targetElement="#4dd59fb9-bdbf-4ec9-9516-5dadb63a8a39"
+          sourceElement="#0c3941d7-aa89-445e-89c7-a65aa34dc310"/>
+    </ownedArchitectures>
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.epbs:EPBSArchitecture"
+        id="cca0fbfa-269b-4ac4-9081-0dbd282a31ff" name="EPBS Architecture">
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
+          id="27f574e3-ae9e-48fd-b107-8717b0ff3193" name="Capabilities"/>
+      <ownedConfigurationItemPkg xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItemPkg"
+          id="44bef1a0-8526-4ffc-8b8f-679740153113" name="Structure">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="2c4269b8-3c65-43d0-a50a-5ac8f807e552"
+            name="System" abstractType="#25693a97-ce8e-4058-9c70-78a16497cacd"/>
+        <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+            id="25693a97-ce8e-4058-9c70-78a16497cacd" name="System" kind="SystemCI">
+          <ownedPhysicalArtifactRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArtifactRealization"
+              id="b9fbfc16-27ef-416c-a41f-9908a6ed15eb" targetElement="#7ac027d8-1bba-476a-933a-3940f42cb176"
+              sourceElement="#25693a97-ce8e-4058-9c70-78a16497cacd"/>
+        </ownedConfigurationItems>
+      </ownedConfigurationItemPkg>
+      <ownedPhysicalArchitectureRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArchitectureRealization"
+          id="dc8e22ef-6347-4570-b4e7-e18321481a39" targetElement="#0c3941d7-aa89-445e-89c7-a65aa34dc310"
+          sourceElement="#cca0fbfa-269b-4ac4-9081-0dbd282a31ff"/>
+    </ownedArchitectures>
+  </ownedModelRoots>
+</org.polarsys.capella.core.data.capellamodeller:Project>
