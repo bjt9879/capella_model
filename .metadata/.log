@@ -1,0 +1,50 @@
+!SESSION 2023-01-16 13:29:44.943 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-01-16 13:31:13.783
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\bjt'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2023-01-16 13:33:37.772 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-01-16 13:34:17.763
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\bjt'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.polarsys.capella.core.data.migration 1 0 2023-01-16 13:35:56.599
+!MESSAGE Capella: Sirius WorkspaceImageGMFBoundsMigrationParticipant replaced by CapellaWorkspaceImageGMFBoundsMigrationParticipant
+
+!ENTRY org.eclipse.egit.core 4 0 2023-01-16 13:37:44.870
+!MESSAGE An exception occurred during push on URI https://github.com/bjt9879/capella_model.git: https://github.com/bjt9879/capella_model.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/bjt9879/capella_model.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:685)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:627)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:127)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1384)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:191)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:210)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2023-01-16 13:39:49.248
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2023-01-16 13:39:49.249
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2023-01-16 13:39:49.249
+!MESSAGE The project description file (.project) for 'Flight_Simulator' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
