@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_AfsowZXlEe276pyQGLz8TA" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_AfsowpXlEe276pyQGLz8TA" bindingContexts="_Afsoy5XlEe276pyQGLz8TA">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.egit.ui.internal.commit.CommitEditorInputFactory&quot; id=&quot;org.eclipse.egit.ui.commitEditor&quot; name=&quot;14945f8 [capella_model]&quot; tooltip=&quot;&amp;apos;Initial Commit&amp;apos; - Commit in repository capella_model&quot;>&#xD;&#xA;&lt;persistable commit=&quot;14945f85b87e68ce0b6fbc701db3a702e526aeb3&quot; path=&quot;C:\Users\bjt\Documents\GitHub\capella_model\.git&quot; stash=&quot;false&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInputFactory&quot; id=&quot;org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID&quot; name=&quot;[OAB] Simulator&quot; tooltip=&quot;platform:/resource/Flight_Simulator/Flight_Simulator.aird/[OAB] Simulator&quot;>&#xD;&#xA;&lt;persistable REP_DESC_URI=&quot;platform:/resource/Flight_Simulator/Flight_Simulator.aird#_9LaBEI-PEe2HFceckGDQuA&quot; SESSION_RESOURCE_URI=&quot;platform:/resource/Flight_Simulator/Flight_Simulator.aird&quot; bundle=&quot;org.eclipse.sirius.ui&quot; class=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInput&quot; name=&quot;[OAB] Simulator&quot; uri=&quot;platform:/resource/Flight_Simulator/Flight_Simulator.aird#_9L4iMY-PEe2HFceckGDQuA&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInputFactory&quot; id=&quot;org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID&quot; name=&quot;[OAB] Certification Concept&quot; tooltip=&quot;platform:/resource/Flight_Simulator/Flight_Simulator.aird/[OAB] Certification Concept&quot;>&#xD;&#xA;&lt;persistable REP_DESC_URI=&quot;platform:/resource/Flight_Simulator/Flight_Simulator.aird#_EMCw8I6NEe2Pj4wYSCP93g&quot; SESSION_RESOURCE_URI=&quot;platform:/resource/Flight_Simulator/Flight_Simulator.aird&quot; bundle=&quot;org.eclipse.sirius.ui&quot; class=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInput&quot; name=&quot;[OAB] Certification Concept&quot; uri=&quot;platform:/resource/Flight_Simulator/Flight_Simulator.aird#_EM33YY6NEe2Pj4wYSCP93g&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInputFactory&quot; id=&quot;org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID&quot; name=&quot;[OAB] Certification&quot; tooltip=&quot;platform:/resource/Flight_Simulator/Flight_Simulator.aird/[OAB] Certification&quot;>&#xD;&#xA;&lt;persistable REP_DESC_URI=&quot;platform:/resource/Flight_Simulator/Flight_Simulator.aird#_pbUWYIEYEe2eGKwyVbw0_A&quot; SESSION_RESOURCE_URI=&quot;platform:/resource/Flight_Simulator/Flight_Simulator.aird&quot; bundle=&quot;org.eclipse.sirius.ui&quot; class=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInput&quot; name=&quot;[OAB] Certification&quot; uri=&quot;platform:/resource/Flight_Simulator/Flight_Simulator.aird#_pbZO4YEYEe2eGKwyVbw0_A&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInputFactory&quot; id=&quot;org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID&quot; name=&quot;[OCB] Operational Capabilities&quot; tooltip=&quot;platform:/resource/Flight_Simulator/Flight_Simulator.aird/[OCB] Operational Capabilities&quot;>&#xD;&#xA;&lt;persistable REP_DESC_URI=&quot;platform:/resource/Flight_Simulator/Flight_Simulator.aird#_lQi_EIEYEe2eGKwyVbw0_A&quot; SESSION_RESOURCE_URI=&quot;platform:/resource/Flight_Simulator/Flight_Simulator.aird&quot; bundle=&quot;org.eclipse.sirius.ui&quot; class=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInput&quot; name=&quot;[OCB] Operational Capabilities&quot; uri=&quot;platform:/resource/Flight_Simulator/Flight_Simulator.aird#_lQulQYEYEe2eGKwyVbw0_A&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.amalgam.explorer.activity.ui.internal.ActivityExplorerEditorInputFactory&quot; id=&quot;org.eclipse.amalgam.explorer.activity.ui.editor.activityExplorerEditor&quot; name=&quot;Flight_Simulator&quot; tooltip=&quot;Flight_Simulator&quot;>&#xD;&#xA;&lt;persistable activityExplorerFile=&quot;/Flight_Simulator/Flight_Simulator.aird&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.egit.ui.internal.commit.CommitEditorInputFactory&quot; id=&quot;org.eclipse.egit.ui.commitEditor&quot; name=&quot;14945f8 [capella_model]&quot; tooltip=&quot;&amp;apos;Initial Commit&amp;apos; - Commit in repository capella_model&quot;>&#xD;&#xA;&lt;persistable commit=&quot;14945f85b87e68ce0b6fbc701db3a702e526aeb3&quot; path=&quot;C:\Users\bjt\Documents\GitHub\capella_model\.git&quot; stash=&quot;false&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.polarsys.capella.core.defaultAcceleratorConfiguration</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_AfsowpXlEe276pyQGLz8TA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_FO3topXlEe276pyQGLz8TA" x="903" y="147" width="1669" height="1252">
     <persistedState key="coolBarVisible" value="true"/>
@@ -11,7 +11,7 @@
     <persistedState key="show_in_time" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;show_in_time/>"/>
     <tags>topLevel</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_FO3topXlEe276pyQGLz8TA" selectedElement="_FO4UsJXlEe276pyQGLz8TA" horizontal="true">
-      <children xsi:type="advanced:PerspectiveStack" xmi:id="_FO4UsJXlEe276pyQGLz8TA" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_143XgJXlEe2CRIh9qgmD-w">
+      <children xsi:type="advanced:PerspectiveStack" xmi:id="_FO4UsJXlEe276pyQGLz8TA" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_FWYD0JXlEe276pyQGLz8TA">
         <children xsi:type="advanced:Perspective" xmi:id="_FWYD0JXlEe276pyQGLz8TA" elementId="capella.sirius.perspective" selectedElement="_FWYD0ZXlEe276pyQGLz8TA" label="Capella" iconURI="platform:/plugin/org.polarsys.capella.core.platform.sirius.ui.perspective/icons/Capella16x16.png">
           <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:print,persp.hideToolbarSC:org.eclipse.ui.edit.undo,persp.hideToolbarSC:org.eclipse.ui.edit.redo,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,persp.actionSet:org.eclipse.ui.edit.text.actionSet.navigation,persp.actionSet:org.eclipse.ui.externaltools.ExternalToolsSet,persp.actionSet:org.eclipse.ui.edit.text.actionSet.annotationNavigation,persp.actionSet:org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo,persp.actionSet:org.eclipse.ui.actionSet.openFiles,"/>
           <tags>persp.actionSet:org.eclipse.mylyn.tasks.ui.navigation</tags>
@@ -38,24 +38,33 @@
           <children xsi:type="basic:PartSashContainer" xmi:id="_FWYD0ZXlEe276pyQGLz8TA" selectedElement="_FWYD05XlEe276pyQGLz8TA" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_FWYD0pXlEe276pyQGLz8TA" elementId="center" toBeRendered="false" containerData="9900"/>
             <children xsi:type="basic:PartSashContainer" xmi:id="_FWYD05XlEe276pyQGLz8TA" containerData="100" selectedElement="_FWYD2ZXlEe276pyQGLz8TA" horizontal="true">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_FWYD1JXlEe276pyQGLz8TA" containerData="2500" selectedElement="_FWYD1ZXlEe276pyQGLz8TA">
-                <children xsi:type="basic:PartStack" xmi:id="_FWYD1ZXlEe276pyQGLz8TA" elementId="topLeft" containerData="4005" selectedElement="_FWYD1pXlEe276pyQGLz8TA">
-                  <children xsi:type="advanced:Placeholder" xmi:id="_FWYD1pXlEe276pyQGLz8TA" elementId="capella.project.explorer" ref="_FWMdoJXlEe276pyQGLz8TA" closeable="true">
-                    <tags>View</tags>
-                    <tags>categoryTag:Capella</tags>
+              <children xsi:type="basic:PartSashContainer" xmi:id="_FWYD1JXlEe276pyQGLz8TA" containerData="2500" selectedElement="_rYqn0JXoEe2YUKNfxQqPZQ">
+                <children xsi:type="basic:PartSashContainer" xmi:id="_rYqn0JXoEe2YUKNfxQqPZQ" containerData="4005" selectedElement="_rYqn0ZXoEe2YUKNfxQqPZQ">
+                  <children xsi:type="basic:PartStack" xmi:id="_FWYD1ZXlEe276pyQGLz8TA" elementId="topLeft" containerData="6576" selectedElement="_FWYD1pXlEe276pyQGLz8TA">
+                    <children xsi:type="advanced:Placeholder" xmi:id="_FWYD1pXlEe276pyQGLz8TA" elementId="capella.project.explorer" ref="_FWMdoJXlEe276pyQGLz8TA" closeable="true">
+                      <tags>View</tags>
+                      <tags>categoryTag:Capella</tags>
+                    </children>
+                  </children>
+                  <children xsi:type="basic:PartStack" xmi:id="_rYqn0ZXoEe2YUKNfxQqPZQ" elementId="PartStack@465926f9" containerData="3424" selectedElement="_rFkFoZXoEe2YUKNfxQqPZQ">
+                    <children xsi:type="advanced:Placeholder" xmi:id="_rFkFoZXoEe2YUKNfxQqPZQ" elementId="org.eclipse.ui.views.ContentOutline" ref="_rFkFoJXoEe2YUKNfxQqPZQ" closeable="true">
+                      <tags>View</tags>
+                      <tags>categoryTag:General</tags>
+                    </children>
                   </children>
                 </children>
-                <children xsi:type="basic:PartStack" xmi:id="_FWYD15XlEe276pyQGLz8TA" elementId="bottomLeft" containerData="5995" selectedElement="_FWYD2JXlEe276pyQGLz8TA">
-                  <children xsi:type="advanced:Placeholder" xmi:id="_FWYD2JXlEe276pyQGLz8TA" elementId="org.polarsys.capella.core.ui.fastlinker.view" ref="_FWTLUJXlEe276pyQGLz8TA" closeable="true">
+                <children xsi:type="basic:PartStack" xmi:id="_FWYD15XlEe276pyQGLz8TA" elementId="bottomLeft" toBeRendered="false" containerData="5995">
+                  <children xsi:type="advanced:Placeholder" xmi:id="_FWYD2JXlEe276pyQGLz8TA" elementId="org.polarsys.capella.core.ui.fastlinker.view" toBeRendered="false" ref="_FWTLUJXlEe276pyQGLz8TA" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:Capella</tags>
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartSashContainer" xmi:id="_FWYD2ZXlEe276pyQGLz8TA" containerData="7500" selectedElement="_FWYD25XlEe276pyQGLz8TA">
-                <children xsi:type="advanced:Placeholder" xmi:id="_FWYD2pXlEe276pyQGLz8TA" elementId="org.eclipse.ui.editorss" containerData="3159" ref="_FWD6wJXlEe276pyQGLz8TA"/>
-                <children xsi:type="basic:PartStack" xmi:id="_FWYD25XlEe276pyQGLz8TA" elementId="bottom" containerData="6841" selectedElement="_zOteYJXlEe2CRIh9qgmD-w">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_FWYD2ZXlEe276pyQGLz8TA" containerData="7500" selectedElement="_FWYD2pXlEe276pyQGLz8TA">
+                <children xsi:type="advanced:Placeholder" xmi:id="_FWYD2pXlEe276pyQGLz8TA" elementId="org.eclipse.ui.editorss" containerData="6550" ref="_FWD6wJXlEe276pyQGLz8TA"/>
+                <children xsi:type="basic:PartStack" xmi:id="_FWYD25XlEe276pyQGLz8TA" elementId="bottom" containerData="3450" selectedElement="_FWYD3JXlEe276pyQGLz8TA">
                   <tags>Git</tags>
+                  <tags>General</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_FWYD3JXlEe276pyQGLz8TA" elementId="org.eclipse.ui.views.PropertySheet" ref="_FWTyYJXlEe276pyQGLz8TA" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:General</tags>
@@ -68,6 +77,10 @@
                     <tags>View</tags>
                     <tags>categoryTag:Capella</tags>
                   </children>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_ugKkQJXoEe2YUKNfxQqPZQ" elementId="org.eclipse.egit.ui.RepositoriesView" ref="_14x38JXlEe2CRIh9qgmD-w" closeable="true">
+                    <tags>View</tags>
+                    <tags>categoryTag:Git</tags>
+                  </children>
                   <children xsi:type="advanced:Placeholder" xmi:id="_zOteYJXlEe2CRIh9qgmD-w" elementId="org.eclipse.egit.ui.StagingView" ref="_zOs3UJXlEe2CRIh9qgmD-w" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:Git</tags>
@@ -78,7 +91,7 @@
           </children>
         </children>
         <children xsi:type="advanced:Perspective" xmi:id="_143XgJXlEe2CRIh9qgmD-w" elementId="org.eclipse.egit.ui.GitRepositoryExploring" selectedElement="_143XgZXlEe2CRIh9qgmD-w" label="Git" iconURI="platform:/plugin/org.eclipse.egit.ui/icons/obj16/gitrepository.png">
-          <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:print,persp.hideToolbarSC:org.eclipse.ui.edit.undo,persp.hideToolbarSC:org.eclipse.ui.edit.redo,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,"/>
+          <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:print,persp.hideToolbarSC:org.eclipse.ui.edit.undo,persp.hideToolbarSC:org.eclipse.ui.edit.redo,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,persp.actionSet:org.eclipse.ui.edit.text.actionSet.navigation,persp.actionSet:org.eclipse.ui.externaltools.ExternalToolsSet,persp.actionSet:org.eclipse.ui.edit.text.actionSet.annotationNavigation,persp.actionSet:org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo,persp.actionSet:org.eclipse.ui.actionSet.openFiles,"/>
           <tags>persp.actionSet:org.eclipse.mylyn.tasks.ui.navigation</tags>
           <tags>persp.actionSet:org.eclipse.ui.cheatsheets.actionSet</tags>
           <tags>persp.actionSet:org.eclipse.search.searchActionSet</tags>
@@ -100,7 +113,7 @@
           <tags>persp.actionSet:org.eclipse.egit.ui.navigation</tags>
           <tags>persp.actionSet:org.eclipse.egit.ui.SearchActionSet</tags>
           <tags>persp.newWizSC:org.eclipse.egit.ui.CreateRepositoryWizard</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_143XgZXlEe2CRIh9qgmD-w" selectedElement="_143Xh5XlEe2CRIh9qgmD-w" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_143XgZXlEe2CRIh9qgmD-w" selectedElement="_143XgpXlEe2CRIh9qgmD-w" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_143XgpXlEe2CRIh9qgmD-w" containerData="3000" selectedElement="_143Xg5XlEe2CRIh9qgmD-w">
               <children xsi:type="basic:PartStack" xmi:id="_143Xg5XlEe2CRIh9qgmD-w" elementId="org.eclipse.egit.ui.RepositoriesViewMStack" containerData="7000" selectedElement="_143XhJXlEe2CRIh9qgmD-w">
                 <children xsi:type="advanced:Placeholder" xmi:id="_143XhJXlEe2CRIh9qgmD-w" elementId="org.eclipse.egit.ui.RepositoriesView" ref="_14x38JXlEe2CRIh9qgmD-w" closeable="true">
@@ -118,7 +131,6 @@
             <children xsi:type="basic:PartSashContainer" xmi:id="_143Xh5XlEe2CRIh9qgmD-w" containerData="7000" selectedElement="_143XiZXlEe2CRIh9qgmD-w">
               <children xsi:type="advanced:Placeholder" xmi:id="_143XiJXlEe2CRIh9qgmD-w" elementId="org.eclipse.ui.editorss" containerData="5000" ref="_FWD6wJXlEe276pyQGLz8TA"/>
               <children xsi:type="basic:PartStack" xmi:id="_143XiZXlEe2CRIh9qgmD-w" elementId="bottom" containerData="5000" selectedElement="_143XipXlEe2CRIh9qgmD-w">
-                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_143XipXlEe2CRIh9qgmD-w" elementId="org.eclipse.team.ui.GenericHistoryView" ref="_14zGEJXlEe2CRIh9qgmD-w" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:Version Control (Team)</tags>
@@ -185,9 +197,18 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_FWD6wJXlEe276pyQGLz8TA" elementId="org.eclipse.ui.editorss" selectedElement="_FWD6wZXlEe276pyQGLz8TA">
-      <children xsi:type="basic:PartStack" xmi:id="_FWD6wZXlEe276pyQGLz8TA" elementId="org.eclipse.e4.primaryDataStack">
+      <children xsi:type="basic:PartStack" xmi:id="_FWD6wZXlEe276pyQGLz8TA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_oIP_8JXoEe2YUKNfxQqPZQ">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
+        <tags>active</tags>
+        <children xsi:type="basic:Part" xmi:id="_oIP_8JXoEe2YUKNfxQqPZQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Flight_Simulator" iconURI="platform:/plugin/org.eclipse.amalgam.explorer.activity.ui/icons/full/obj16/menu-overview.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.amalgam.explorer.activity.ui.editor.activityExplorerEditor&quot; name=&quot;Flight_Simulator&quot; partName=&quot;Flight_Simulator&quot; title=&quot;Flight_Simulator&quot; tooltip=&quot;Flight_Simulator&quot;>&#xD;&#xA;&lt;input activityExplorerFile=&quot;/Flight_Simulator/Flight_Simulator.aird&quot; factoryID=&quot;org.eclipse.amalgam.explorer.activity.ui.internal.ActivityExplorerEditorInputFactory&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>removeOnHide</tags>
+          <tags>org.eclipse.amalgam.explorer.activity.ui.editor.activityExplorerEditor</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
+        </children>
       </children>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_FWMdoJXlEe276pyQGLz8TA" elementId="capella.project.explorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Project Explorer" iconURI="platform:/plugin/org.polarsys.capella.core.platform.sirius.ui.navigator/icons/eview16/project_explorer.png" tooltip="This explorer provides quick access to Capella models and tooling" closeable="true">
@@ -240,6 +261,7 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_FWW1sJXlEe276pyQGLz8TA" elementId="org.polarsys.capella.core.ui.semantic.browser.view.SemanticBrowserID" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Semantic Browser" iconURI="platform:/plugin/org.polarsys.capella.core.ui.semantic.browser/icons/full/eview16/sembrowser.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.polarsys.capella.core.ui.semantic.browser.sirius.view.SiriusSemanticBrowserView"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.polarsys.capella.core.ui.semantic.browser.sirius"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view listeningToWorkbenchPageSelectionEvents=&quot;1&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:Capella</tags>
       <menus xmi:id="_vHACIJXlEe2CRIh9qgmD-w" elementId="org.polarsys.capella.core.ui.semantic.browser.view.SemanticBrowserID">
@@ -278,8 +300,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:Version Control (Team)</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_17t3MJXlEe2CRIh9qgmD-w" elementId="org.eclipse.team.ui.GenericHistoryView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -316,6 +336,18 @@
       <tags>View</tags>
       <tags>categoryTag:Java</tags>
     </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_rFkFoJXoEe2YUKNfxQqPZQ" elementId="org.eclipse.ui.views.ContentOutline" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Outline" iconURI="platform:/plugin/org.eclipse.ui.views/icons/full/eview16/outline_co.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.views"/>
+      <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.views.contentoutline.ContentOutline"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:General</tags>
+      <menus xmi:id="_rFsogJXoEe2YUKNfxQqPZQ" elementId="org.eclipse.ui.views.ContentOutline">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_rFsogZXoEe2YUKNfxQqPZQ" elementId="org.eclipse.ui.views.ContentOutline" visible="false"/>
+    </sharedElements>
     <trimBars xmi:id="_Afsow5XlEe276pyQGLz8TA" elementId="org.eclipse.ui.main.toolbar" contributorURI="platform:/plugin/org.eclipse.ui.workbench">
       <children xsi:type="menu:ToolBar" xmi:id="_FTfH4JXlEe276pyQGLz8TA" elementId="group.file" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -323,7 +355,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_FTgWAJXlEe276pyQGLz8TA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_hKE0QJXlEe2CRIh9qgmD-w" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_AhmtW5XlEe276pyQGLz8TA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_guwC0JXoEe2YUKNfxQqPZQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_AhmtW5XlEe276pyQGLz8TA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_FTgWAZXlEe276pyQGLz8TA" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -351,7 +383,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_FTg9FJXlEe276pyQGLz8TA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_hKIeoJXlEe2CRIh9qgmD-w" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_AhmGN5XlEe276pyQGLz8TA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_guzGIJXoEe2YUKNfxQqPZQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_AhmGN5XlEe276pyQGLz8TA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_FTg9FZXlEe276pyQGLz8TA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -3035,7 +3067,7 @@
   <addons xmi:id="_AftP25XlEe276pyQGLz8TA" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_AftP3JXlEe276pyQGLz8TA" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_Af7SQJXlEe276pyQGLz8TA" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_ghsloZXlEe2CRIh9qgmD-w" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_AhdjUJXlEe276pyQGLz8TA" elementId="org.eclipse.team.ui.category.team" name="Version control (Team)" description="Actions that apply when working with a version control system"/>
   <categories xmi:id="_AhdjUZXlEe276pyQGLz8TA" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>

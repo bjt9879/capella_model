@@ -36,3 +36,13 @@
 2023-01-08 04:47:01,939;Capella;6.0.0.202209090800;Transition;Functional+Transition;ERROR;
 2023-01-08 04:47:27,395;Capella;6.0.0.202209090800;Open+Representation;;;
 2023-01-08 04:47:28,135;Capella;6.0.0.202209090800;Open+Representation;;OK;
+2023-01-16 13:55:58,605;Capella;6.0.0.202209090800;Open+Session;Flight_Simulator.aird;;
+2023-01-16 13:56:15,138;Capella;6.0.0.202209090800;Open+Session;Flight_Simulator.aird;OK;
+2023-01-16 13:57:48,550;Capella;6.0.0.202209090800;Open+Representation;;;
+2023-01-16 13:57:51,311;Capella;6.0.0.202209090800;Open+Representation;;OK;
+2023-01-16 13:57:59,842;Capella;6.0.0.202209090800;Open+Representation;;;
+2023-01-16 13:58:00,485;Capella;6.0.0.202209090800;Open+Representation;;OK;
+2023-01-16 13:58:04,401;Capella;6.0.0.202209090800;Open+Representation;;;
+2023-01-16 13:58:05,093;Capella;6.0.0.202209090800;Open+Representation;;OK;
+2023-01-16 13:58:08,839;Capella;6.0.0.202209090800;Open+Representation;;;
+2023-01-16 13:58:09,346;Capella;6.0.0.202209090800;Open+Representation;;OK;
