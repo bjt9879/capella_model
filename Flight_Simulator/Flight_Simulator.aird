@@ -55,7 +55,7 @@
         <description xmi:type="description_2:SequenceDiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Interaction%20Scenario']"/>
         <target xmi:type="org.polarsys.capella.core.data.interaction:Scenario" href="Flight_Simulator.capella#5afae38b-3fcf-4e6c-8c4f-683deb58791f"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_EMCw8I6NEe2Pj4wYSCP93g" documentation="&lt;p>&amp;nbsp;&lt;/p>&#xA;&#xA;&lt;p>&amp;nbsp;&lt;/p>&#xA;" name="[OAB] Certification Concept" repPath="#_EL3x0I6NEe2Pj4wYSCP93g" changeId="2efd8c48-f8ca-4961-911f-fc5271cf4f72">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_EMCw8I6NEe2Pj4wYSCP93g" documentation="&lt;p>&amp;nbsp;&lt;/p>&#xA;&#xA;&lt;p>&amp;nbsp;&lt;/p>&#xA;" name="[OAB] Certification Concept" repPath="#_EL3x0I6NEe2Pj4wYSCP93g" changeId="43d56a74-e8b0-42b5-a840-0178a67ac89f">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Blank']"/>
         <target xmi:type="org.polarsys.capella.core.data.oa:EntityPkg" href="Flight_Simulator.capella#440e5d3c-f8cc-46b9-becd-30c9812a60e2"/>
       </ownedRepresentationDescriptors>
@@ -4846,6 +4846,21 @@
           <styles xmi:type="notation:LineTypeStyle" xmi:id="_4CYRFJWKEe2bOshqluLOVw"/>
           <element xsi:nil="true"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4CYRFZWKEe2bOshqluLOVw" x="969" y="107"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Sj7f4JYJEe2Mp8NmIvI4HA" type="Note" fontName="Segoe UI" description="EH test 2" fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Sj7f4ZYJEe2Mp8NmIvI4HA" source="specificStyles">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Sj7f4pYJEe2Mp8NmIvI4HA" key="verticalAlignment" value="8"/>
+          </eAnnotations>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_Sj7f5pYJEe2Mp8NmIvI4HA" type="DiagramName">
+            <element xsi:nil="true"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_Sj7f55YJEe2Mp8NmIvI4HA" type="Description">
+            <element xsi:nil="true"/>
+          </children>
+          <styles xmi:type="notation:TextStyle" xmi:id="_Sj7f45YJEe2Mp8NmIvI4HA" textAlignment="Center"/>
+          <styles xmi:type="notation:LineTypeStyle" xmi:id="_Sj7f5JYJEe2Mp8NmIvI4HA"/>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Sj7f5ZYJEe2Mp8NmIvI4HA" x="1030" y="226"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_EM33Yo6NEe2Pj4wYSCP93g"/>
         <edges xmi:type="notation:Edge" xmi:id="_DYsdoI8rEe2HFceckGDQuA" type="4001" element="_DYaJwI8rEe2HFceckGDQuA" source="_ytunEI8oEe2HFceckGDQuA" target="_vf0rMI8pEe2HFceckGDQuA">
