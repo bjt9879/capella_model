@@ -85,6 +85,8 @@
               id="a665ed4b-cf52-4351-8efe-65e4673509e9" name="Renew LOA" summary="For those trainers with an LOA that will expire within 120 days, the manufacturer can apply for a new LOA. The manufacturer will need to reapply for FAA approval, to include the submission of an application letter and QAG verifying that the trainer model still meets the current criteria identified in this AC for ATD approvals"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
               id="e091632f-4ccc-4366-b882-b41d73b8de8c" name="Verify ATD still meets the current criteria"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="706b9df5-c456-45d1-8d14-6541061cdca8" name="OA 17: Conduct an on-site functional evaluation of the training device"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="2b51a5ec-3e57-49cc-ac3f-f8b7a97c2f15" name="Request" target="#05b1dc84-7193-4241-bcdd-c92e89d9791c"
               source="#792fbedb-8471-4dfa-b09e-7bad8c604451"/>
@@ -169,7 +171,7 @@
             <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
                 id="19667e9e-4a43-41e4-aea9-e71c685497fc" name="Inspector"/>
             <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
-                id="6c335fa5-a47a-4eea-9fda-895d88f61645" name="Simulator" representedInstance="#adb49ac2-c14f-4b14-840d-1930e76b5559"/>
+                id="6c335fa5-a47a-4eea-9fda-895d88f61645" name="OE 1: Simulator" representedInstance="#adb49ac2-c14f-4b14-840d-1930e76b5559"/>
             <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
                 id="9d239037-a8d8-477f-9d21-7a46a29f8d16" name="Next Flight Tech"/>
             <ownedInstanceRoles xsi:type="org.polarsys.capella.core.data.interaction:InstanceRole"
@@ -204,7 +206,28 @@
       <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
           id="2881107a-8af0-4fa3-86d5-72f502502046" name="Interfaces"/>
       <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
-          id="361ffa04-f384-42e7-8063-5a8bc042b633" name="Data"/>
+          id="361ffa04-f384-42e7-8063-5a8bc042b633" name="Data">
+        <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+            id="e23ebf39-e1a7-41d4-a507-90f186752d8d" name="DataPkg 1: Mass Properties">
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:PhysicalQuantity"
+              id="567cfd20-5e40-429e-8181-ae26e83b191e" name="Mass" kind="FLOAT" unit="#5a064556-7f9b-4efd-9f80-dd06b27b5eb0">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="378aad9c-e142-4449-81dc-0693ed19bef9" name="Mass_min" abstractType="#567cfd20-5e40-429e-8181-ae26e83b191e"
+                value="0"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:PhysicalQuantity"
+              id="3c55df65-2db2-477f-98f7-77c646cc0aff" name="CG Position" unit="#c7970c86-d3fd-4bfe-a3d2-589887fef552"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:PhysicalQuantity"
+              id="b0c784db-10f3-47df-ac6b-de11aad7cb7e" name="PQ 3: MOI" summary="Moment Of Inertia"
+              unit="#8323236a-ff38-4845-aabb-169cedadd659"/>
+        </ownedDataPkgs>
+        <ownedUnits xsi:type="org.polarsys.capella.core.data.information:Unit" id="8323236a-ff38-4845-aabb-169cedadd659"
+            name="Kg.m^2" summary="Inertia = mass x distance ^2"/>
+        <ownedUnits xsi:type="org.polarsys.capella.core.data.information:Unit" id="5a064556-7f9b-4efd-9f80-dd06b27b5eb0"
+            name="Kg" summary="Mass in kilograms"/>
+        <ownedUnits xsi:type="org.polarsys.capella.core.data.information:Unit" id="c7970c86-d3fd-4bfe-a3d2-589887fef552"
+            name="mm" summary="Distance in milimeters"/>
+      </ownedDataPkg>
       <ownedRolePkg xsi:type="org.polarsys.capella.core.data.oa:RolePkg" id="2835d912-5cea-4844-bfed-43683cc11af3"
           name="Roles">
         <ownedRoles xsi:type="org.polarsys.capella.core.data.oa:Role" id="19b1d825-78b3-46a6-aa6a-0c093a754c1e"
@@ -229,18 +252,20 @@
       <ownedEntityPkg xsi:type="org.polarsys.capella.core.data.oa:EntityPkg" id="440e5d3c-f8cc-46b9-becd-30c9812a60e2"
           name="Operational Entities">
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="adb49ac2-c14f-4b14-840d-1930e76b5559"
-            name="Simulator" abstractType="#12a7e49e-67c7-479e-82a5-1d970191e40f"/>
+            name="OE 1: Simulator" abstractType="#12a7e49e-67c7-479e-82a5-1d970191e40f"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="0fef1ef5-c69b-4d34-8c3b-c0f2dad5faf7"
             name="Pilot Training Center" abstractType="#673259db-f2cb-4a9d-8f2e-64960c978218"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="3b9f150e-f388-48f2-b921-a335f1dc9bbd"
             name="Air Training Device (ATD) Manufacturer" abstractType="#9706125c-439c-433e-a146-0e21ec89eb12"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="bcf7da64-ec23-4100-b56e-1e72a6e51c5b"
             name="Federal Aviation Administration (FAA)" abstractType="#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="484da6be-7979-413e-a871-5a22f04352f3"
+            name="OE 5 : Customer Facilities" abstractType="#5cb55cd4-ea45-4513-a8f2-0a169cb3a063"/>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.oa:CommunicationMean"
-            id="94ddc588-b14b-4ec5-9154-0945699ed1bc" name="Conduct an on-site functional evaluation of the training device"
+            id="94ddc588-b14b-4ec5-9154-0945699ed1bc" name="This should be a communication mean"
             source="#ebb518b3-b5c0-43c8-a17b-0e880147699a" target="#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="12a7e49e-67c7-479e-82a5-1d970191e40f"
-            name="Simulator">
+            name="OE 1: Simulator">
           <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
               id="9d1d62ed-4267-4675-bf70-22074c5a42a2" name="AC 61-136B" summary="AATD"
               constrainedElements="#12a7e49e-67c7-479e-82a5-1d970191e40f">
@@ -251,26 +276,26 @@
             </ownedSpecification>
           </ownedConstraints>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="24766612-5b3e-4285-8c51-559436a1e8d7"
-              name="OE 2: Simulation Computer" abstractType="#e28c1297-05a1-415d-b3c9-9b297372512e"/>
+              name="OE 1.1: Simulation Computer" abstractType="#e28c1297-05a1-415d-b3c9-9b297372512e"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c4839a6a-dbc7-442d-ab7f-2b0a553af426"
-              name="OE 1: Cabin" abstractType="#4c8a6d8a-30dc-4ef9-bb3d-8807061311ec"/>
+              name="OE 1.2: Cabin" abstractType="#4c8a6d8a-30dc-4ef9-bb3d-8807061311ec"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a19dc5c6-61a8-45fa-b56c-7f839472bd54"
-              name="OE 3: Power System" abstractType="#890baf3a-cb90-4719-8860-e4b124a1ba6e"/>
+              name="OE 1.3: Power System" abstractType="#890baf3a-cb90-4719-8860-e4b124a1ba6e"/>
           <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="e28c1297-05a1-415d-b3c9-9b297372512e"
-              name="OE 2: Simulation Computer"/>
+              name="OE 1.1: Simulation Computer"/>
           <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="4c8a6d8a-30dc-4ef9-bb3d-8807061311ec"
-              name="OE 1: Cabin">
+              name="OE 1.2: Cabin">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="51146eca-c06b-470c-9fe6-5c244d20fe45"
-                name="OE 1.1: Pilot Station" abstractType="#a434d41c-e8db-47c4-87fe-3a4b7ee9304f"/>
+                name="OE 1.2.1: Pilot Station" abstractType="#a434d41c-e8db-47c4-87fe-3a4b7ee9304f"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="904d78fc-0f2e-40bd-9ff2-e78c66cb0e18"
-                name="OE 1.2: Instructor station" abstractType="#c20ec16a-3e4a-420d-9cee-b3f23aaa7874"/>
+                name="OE 1.2.2: Instructor station" abstractType="#c20ec16a-3e4a-420d-9cee-b3f23aaa7874"/>
             <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="a434d41c-e8db-47c4-87fe-3a4b7ee9304f"
-                name="OE 1.1: Pilot Station"/>
+                name="OE 1.2.1: Pilot Station"/>
             <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="c20ec16a-3e4a-420d-9cee-b3f23aaa7874"
-                name="OE 1.2: Instructor station"/>
+                name="OE 1.2.2: Instructor station"/>
           </ownedEntities>
           <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="890baf3a-cb90-4719-8860-e4b124a1ba6e"
-              name="OE 3: Power System"/>
+              name="OE 1.3: Power System"/>
           <ownedCommunicationMeans xsi:type="org.polarsys.capella.core.data.oa:CommunicationMean"
               id="6ee51c73-3291-44cf-bc3d-9ec40c5ad45b" name="CM 1: WIFI - UDP" source="#c20ec16a-3e4a-420d-9cee-b3f23aaa7874"
               target="#e28c1297-05a1-415d-b3c9-9b297372512e"/>
@@ -324,13 +349,32 @@
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e2330636-f847-40d0-b27c-72c49abe88be"
               name="Aviation Safety Inspector (ASI)" abstractType="#ebb518b3-b5c0-43c8-a17b-0e880147699a"/>
           <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="ebb518b3-b5c0-43c8-a17b-0e880147699a"
-              name="Aviation Safety Inspector (ASI)" actor="true" human="true"/>
+              name="Aviation Safety Inspector (ASI)" actor="true" human="true">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="0e032e5f-aa2e-479b-b74c-05146fbadc75" targetElement="#706b9df5-c456-45d1-8d14-6541061cdca8"
+                sourceElement="#ebb518b3-b5c0-43c8-a17b-0e880147699a"/>
+          </ownedEntities>
           <ownedRoleAllocations xsi:type="org.polarsys.capella.core.data.oa:RoleAllocation"
               id="924eddea-80e6-4252-b08e-30def8a126a8" targetElement="#19b1d825-78b3-46a6-aa6a-0c093a754c1e"
               sourceElement="#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
           <ownedRoleAllocations xsi:type="org.polarsys.capella.core.data.oa:RoleAllocation"
               id="9e336d28-d295-47b4-af51-2d4d4869b058" targetElement="#abba5440-71c0-45ba-93c1-4e2c9077af34"
               sourceElement="#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
+        </ownedEntities>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="5cb55cd4-ea45-4513-a8f2-0a169cb3a063"
+            name="OE 5 : Customer Facilities">
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="9ce36622-a21e-4ede-8c84-eca87bbc03af"
+              name="OE 5.1: Power Supply" abstractType="#8f55fb41-0df8-4471-bfdd-2207f186d076"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="0a549765-f796-4b42-b052-5bee269468f1"
+              name="OE 5.2: Fundations" abstractType="#2f82cfa4-dbd2-4c70-a847-48a1c4f818c6"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="2e8ab5a3-866a-4932-9ce0-cf7c85b78737"
+              name="OE 5.3: HVAC" abstractType="#653dad97-4012-4c85-9bd4-c33cd7c901dd"/>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="8f55fb41-0df8-4471-bfdd-2207f186d076"
+              name="OE 5.1: Power Supply"/>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="2f82cfa4-dbd2-4c70-a847-48a1c4f818c6"
+              name="OE 5.2: Fundations"/>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="653dad97-4012-4c85-9bd4-c33cd7c901dd"
+              name="OE 5.3: HVAC"/>
         </ownedEntities>
       </ownedEntityPkg>
     </ownedArchitectures>
