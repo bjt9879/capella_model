@@ -94,7 +94,7 @@
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
               id="546a1575-43d1-4ca2-8f2f-c3d675b687c1" name="OA 20: Provides Reaction Forces to the simulator"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="d77a48dc-5b4e-43ec-84b8-d9cd907dea21" name="OA 21: Simulate Airplane Dynamics"/>
+              id="d77a48dc-5b4e-43ec-84b8-d9cd907dea21" name="OA 21: Simulate Plane Flight Dynamics"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
               id="3af7ae17-7ce5-40cc-80a5-247be69f7ee5" name="OA 22: Provides Emergency Back-up Power"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
@@ -106,13 +106,23 @@
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
               id="e0b984b0-2d79-4d82-8da0-61cfcf5ade75" name="OperationalActivity 26: Avionics Simulation"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="c4b95d60-b409-4e48-9f9d-f9b37f2236d4" name="OA 27: Plane Controls"/>
+              id="c4b95d60-b409-4e48-9f9d-f9b37f2236d4" name="OA 27: flight Controls"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
               id="c47a5ca3-7f2c-4b40-8cd0-7530de9c4bea" name="OA 28: Simulates the Environment"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
               id="f7f0cfdb-88df-4ad4-9c8c-a37152c94810" name="OA 29: Provides control Force Feedback"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
               id="e53a3380-8c15-46c3-8170-58ea8446a9ff" name="OA 30: Avionics"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="c535fd63-8e73-4c26-99a1-a842789c89cb" name="OA 31: Select the Aircraft Configuration"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="19eec5cc-9095-47a3-bd3b-0ef902d187fd" name="OA 32: Select Location"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="5d2432f5-ed6c-4d70-8399-789d47e8b2c0" name="OA 33: Select Weather Conditions"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="b72fd1d1-3afc-4ce2-bd57-0f6742dcfaf2" name="OA 34: Simulation Pause"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="d4f2fd4a-aef7-4b69-a79a-c1797183c23e" name="OA 35: System Self-Test"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="2b51a5ec-3e57-49cc-ac3f-f8b7a97c2f15" name="Request" target="#05b1dc84-7193-4241-bcdd-c92e89d9791c"
               source="#792fbedb-8471-4dfa-b09e-7bad8c604451"/>
@@ -370,6 +380,9 @@
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="fd186e88-f706-4508-9209-dd1d9b05d246" targetElement="#c47a5ca3-7f2c-4b40-8cd0-7530de9c4bea"
                 sourceElement="#e28c1297-05a1-415d-b3c9-9b297372512e"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="0ee4878a-86eb-4a43-b4c2-5b2ebf3469c5" targetElement="#d4f2fd4a-aef7-4b69-a79a-c1797183c23e"
+                sourceElement="#e28c1297-05a1-415d-b3c9-9b297372512e"/>
           </ownedEntities>
           <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="4c8a6d8a-30dc-4ef9-bb3d-8807061311ec"
               name="OE 1.2: Cabin">
@@ -414,13 +427,32 @@
                 sourceElement="#890baf3a-cb90-4719-8860-e4b124a1ba6e"/>
           </ownedEntities>
           <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="c20ec16a-3e4a-420d-9cee-b3f23aaa7874"
-              name="OE 1.3: Instructor station"/>
+              name="OE 1.3: Instructor station">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="213a0506-31d1-4811-b3e6-2823d1ba3583" targetElement="#c535fd63-8e73-4c26-99a1-a842789c89cb"
+                sourceElement="#c20ec16a-3e4a-420d-9cee-b3f23aaa7874"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="f089b902-f8de-405c-afd0-02daab4e99e3" targetElement="#19eec5cc-9095-47a3-bd3b-0ef902d187fd"
+                sourceElement="#c20ec16a-3e4a-420d-9cee-b3f23aaa7874"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="89b72432-acd4-4513-b806-41b5e55473c8" targetElement="#5d2432f5-ed6c-4d70-8399-789d47e8b2c0"
+                sourceElement="#c20ec16a-3e4a-420d-9cee-b3f23aaa7874"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="9bed8c81-fd8f-4c5d-8791-1419f42056c1" targetElement="#b72fd1d1-3afc-4ce2-bd57-0f6742dcfaf2"
+                sourceElement="#c20ec16a-3e4a-420d-9cee-b3f23aaa7874"/>
+          </ownedEntities>
           <ownedCommunicationMeans xsi:type="org.polarsys.capella.core.data.oa:CommunicationMean"
               id="6ee51c73-3291-44cf-bc3d-9ec40c5ad45b" name="CM 1: WIFI - UDP" source="#c20ec16a-3e4a-420d-9cee-b3f23aaa7874"
               target="#e28c1297-05a1-415d-b3c9-9b297372512e"/>
           <ownedCommunicationMeans xsi:type="org.polarsys.capella.core.data.oa:CommunicationMean"
               id="c8b43e1c-f30b-449b-84ef-eb261548a693" name="CM 2: Ethernet UDP"
               source="#4c8a6d8a-30dc-4ef9-bb3d-8807061311ec" target="#e28c1297-05a1-415d-b3c9-9b297372512e"/>
+          <ownedCommunicationMeans xsi:type="org.polarsys.capella.core.data.oa:CommunicationMean"
+              id="311a4628-e96f-4afc-86bb-aa53f03e2484" name="CommunicationMean 3"
+              source="#890baf3a-cb90-4719-8860-e4b124a1ba6e" target="#4c8a6d8a-30dc-4ef9-bb3d-8807061311ec"/>
+          <ownedCommunicationMeans xsi:type="org.polarsys.capella.core.data.oa:CommunicationMean"
+              id="209ba725-1683-445f-9c58-8674f45672be" name="CommunicationMean 4"
+              source="#890baf3a-cb90-4719-8860-e4b124a1ba6e" target="#e28c1297-05a1-415d-b3c9-9b297372512e"/>
         </ownedEntities>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="673259db-f2cb-4a9d-8f2e-64960c978218"
             name="Pilot Training Center">
