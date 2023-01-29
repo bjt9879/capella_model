@@ -18,6 +18,7 @@
     xmlns:org.polarsys.capella.core.data.oa="http://www.polarsys.org/capella/core/oa/6.0.0"
     xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/6.0.0"
     xmlns:org.polarsys.capella.core.data.pa.deployment="http://www.polarsys.org/capella/core/pa/deployment/6.0.0"
+    xmlns:org.polarsys.capella.core.data.requirement="http://www.polarsys.org/capella/core/requirement/6.0.0"
     id="c6e2da52-5905-4d1f-88bc-48aa7a449b00"
     name="Flight_Simulator">
   <ownedExtensions xsi:type="libraries:ModelInformation" id="4555948d-a091-4d77-aa8c-2ac71ff25e5a"/>
@@ -203,6 +204,19 @@
               source="#08f1619c-d91f-4e5f-8af8-18136dba6529"/>
         </ownedOperationalActivities>
       </ownedFunctionPkg>
+      <ownedRequirementPkgs xsi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg"
+          id="872a8cf1-35de-45a1-bcca-43f5200697c7" name="RequirementsPkg 1">
+        <ownedRequirements xsi:type="org.polarsys.capella.core.data.requirement:SystemUserRequirement"
+            id="cfca9d1b-86df-4052-b13f-bf7ccb81b232" name="SystemUserRequirement 1"/>
+        <ownedRequirements xsi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement"
+            id="087182ab-cccc-4ea1-a56f-c4a2ec8ded45" name="SystemFunctionalRequirement 2"/>
+        <ownedRequirements xsi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalInterfaceRequirement"
+            id="3d405bad-38b5-4b69-857e-1a15a4cff7ec" name="SystemFunctionalInterfaceRequirement 3"/>
+        <ownedRequirements xsi:type="org.polarsys.capella.core.data.requirement:SystemNonFunctionalInterfaceRequirement"
+            id="246cf1d5-adda-487c-bd80-eae557534b01" name="SystemNonFunctionalInterfaceRequirement 4"/>
+        <ownedRequirements xsi:type="org.polarsys.capella.core.data.requirement:SystemNonFunctionalRequirement"
+            id="94838c60-28b3-4582-9308-507251c88140" name="SystemNonFunctionalRequirement 5"/>
+      </ownedRequirementPkgs>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg"
           id="e0b4468e-d40c-4f58-9500-2beca0bc4de6" name="Operational Capabilities">
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
@@ -291,7 +305,13 @@
         </ownedOperationalCapabilities>
       </ownedAbstractCapabilityPkg>
       <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
-          id="2881107a-8af0-4fa3-86d5-72f502502046" name="Interfaces"/>
+          id="2881107a-8af0-4fa3-86d5-72f502502046" name="Interfaces">
+        <ownedInterfacePkgs xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+            id="c65a1e67-fe41-4ecb-8352-3ea7dc3d1804" name="InterfacePkg 1">
+          <ownedInterfaces xsi:type="org.polarsys.capella.core.data.cs:Interface"
+              id="14fc8472-d0e5-4984-88ee-0c9b7dd933f1" name="Interface 1"/>
+        </ownedInterfacePkgs>
+      </ownedInterfacePkg>
       <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
           id="361ffa04-f384-42e7-8063-5a8bc042b633" name="Data">
         <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
@@ -1028,12 +1048,24 @@
           id="9415b689-1d6e-4daa-860d-85e0a96cd87c" name="Structure">
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="75ab6cc7-0734-4749-832b-eb5a2e312fc0"
             name="Logical System" abstractType="#7850dea2-dc2a-406d-9299-89f9ff388ea4"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="9ec24094-7aa5-4aa9-8d5e-3daa02e25d6c"
+            name="LA 1: Controller" abstractType="#3b24fe46-7caa-4187-8129-1d805ac8b568"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="0ad5678d-84f1-44bf-b337-dd867967bf84"
+            name="LA 3" abstractType="#a3696983-e61f-4fdc-937c-0d76e832bb09"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="577c8c25-9968-44ca-b7db-4a739d9921b8"
+            name="LA 4" abstractType="#0cb19544-73f2-4f44-8337-6291a34358b5"/>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="7850dea2-dc2a-406d-9299-89f9ff388ea4" name="Logical System">
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="01243d9e-632c-4e31-9d3d-1f863253481d" targetElement="#8397a760-fa94-4063-b820-2eead4815697"
               sourceElement="#7850dea2-dc2a-406d-9299-89f9ff388ea4"/>
         </ownedLogicalComponents>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="3b24fe46-7caa-4187-8129-1d805ac8b568" name="LA 1: Controller" actor="true"/>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="a3696983-e61f-4fdc-937c-0d76e832bb09" name="LA 3" actor="true"/>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="0cb19544-73f2-4f44-8337-6291a34358b5" name="LA 4" actor="true"/>
       </ownedLogicalComponentPkg>
       <ownedSystemAnalysisRealizations xsi:type="org.polarsys.capella.core.data.la:SystemAnalysisRealization"
           id="5e3b4e39-3539-46fa-b478-f1e789b20341" targetElement="#f3309bde-e517-4c45-bafc-fe478faca832"
@@ -1097,6 +1129,9 @@
               id="d5390e77-ff82-4e4a-ac9a-d85fa5edec40" name="PL 5" linkEnds="#1c1f0159-228f-4f9b-8d15-1d96f912262f #68edb82b-8a44-41fe-a899-489f88288b67"/>
           <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
               id="f04900e0-7a80-496e-aa02-4573cc22f491" name="PL 6" linkEnds="#a122048c-b38e-4fb1-8c9e-e25417f340cc #cb0882a0-b529-4700-b3cb-b3b939138ad5"/>
+          <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+              id="657f2cd3-639c-41d0-a094-7b57972f2b5c" name="CAT6" summary="STP"
+              linkEnds="#409a3442-93d9-49cf-9291-47dd221842f6 #d3a13af3-1d99-420d-9ae4-ff39a509b2ac"/>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
               id="bd54e93f-0a27-4144-bbd4-5ba3e16d3eaf" name="Simulation computer"
               nature="NODE">
@@ -1117,6 +1152,8 @@
             </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                 id="cb0882a0-b529-4700-b3cb-b3b939138ad5" name="PP 5"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                id="409a3442-93d9-49cf-9291-47dd221842f6" name="LAN 1"/>
             <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                 id="a1752b95-4ada-480c-ad2d-b3db4d3cf4dd" name="Computer" nature="NODE">
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e5a6a36f-8a6f-41c5-9e31-9c999aab5d8e"
@@ -1174,7 +1211,44 @@
             </ownedPhysicalComponents>
             <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                 id="d6897a9c-959b-41bf-bdc7-65b4ebdbafdd" name="PC 1: Plane Cabin"
-                nature="NODE"/>
+                nature="NODE">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="6e8b6031-9b2c-4857-bdb4-6f4195551c9f"
+                  name="G1000" abstractType="#d41bc2c0-d3be-4f75-a9a5-17b7a1be9b49"/>
+              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                  id="d41bc2c0-d3be-4f75-a9a5-17b7a1be9b49" name="G1000" nature="NODE">
+                <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+                    id="64df3434-5345-439b-b1ca-1490faae1b4d" name="ECSS-E-ST-50-14C – Spacecraft discrete interfaces"
+                    constrainedElements="#d41bc2c0-d3be-4f75-a9a5-17b7a1be9b49">
+                  <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
+                      id="8b77e728-dd5e-444a-b5b2-3e0c7bed159b">
+                    <bodies></bodies>
+                    <languages>capella:linkedText</languages>
+                  </ownedSpecification>
+                </ownedConstraints>
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="4bb8b67d-f513-4e80-b0e8-f80ec0768d0b"
+                    name="I/O board" abstractType="#cae88bb8-ec25-4f28-9f0a-d5919d314993"/>
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="427e69f7-55c3-4730-b85f-33e663b8f248"
+                    name="Switch Buttons" abstractType="#71de4743-6cf2-4288-921d-01e9a9a88fc5"/>
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e998196a-7e8d-46ee-ba7e-944d1fed1e6a"
+                    name="Signal Conditioner" abstractType="#9e619a8e-e65f-4ae5-971b-d38d98c7feef"/>
+                <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="65567c75-5d73-42a9-aca6-67c471807e87"
+                    name="multiplexer" abstractType="#6ecf56a7-7851-4bd3-be42-0ee503c97968"/>
+                <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                    id="cae88bb8-ec25-4f28-9f0a-d5919d314993" summary="ESP32" name="I/O board"
+                    kind="HARDWARE" nature="NODE">
+                  <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                      id="d3a13af3-1d99-420d-9ae4-ff39a509b2ac" name="PP 1"/>
+                </ownedPhysicalComponents>
+                <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                    id="71de4743-6cf2-4288-921d-01e9a9a88fc5" name="Switch Buttons"
+                    nature="NODE"/>
+                <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                    id="9e619a8e-e65f-4ae5-971b-d38d98c7feef" name="Signal Conditioner"
+                    nature="NODE"/>
+                <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                    id="6ecf56a7-7851-4bd3-be42-0ee503c97968" name="multiplexer" nature="NODE"/>
+              </ownedPhysicalComponents>
+            </ownedPhysicalComponents>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
               id="d6296a5f-dc27-4ae6-b5c5-579fe2240ec5" name="Display System" nature="NODE">
