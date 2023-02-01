@@ -19,7 +19,7 @@
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_CnZWsHg5Ee2vsZ2LJYutjQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Z4L8oHg5Ee2vsZ2LJYutjQ" documentation="&lt;p>This Diagram Identify all the stake holders&lt;/p>&#xA;" name="[OEBD] 1: System - Operational Entities" repPath="#_Z3n78Hg5Ee2vsZ2LJYutjQ" changeId="0a118ef8-7a9c-468f-b79c-50a689bd35a0">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Z4L8oHg5Ee2vsZ2LJYutjQ" documentation="&lt;p>This Diagram Identify all the stake holders&lt;/p>&#xA;" name="[OEBD] 1: System - Operational Entities" repPath="#_Z3n78Hg5Ee2vsZ2LJYutjQ" changeId="f7acf25a-ed1b-4036-8e37-ed81413f87a4">
         <eAnnotations xmi:type="description:DAnnotation" uid="_nvf1QHg6Ee2vsZ2LJYutjQ" source="DiagramTitleBlock" references="_nvgcUHg6Ee2vsZ2LJYutjQ _nvhDZXg6Ee2vsZ2LJYutjQ"/>
         <eAnnotations xmi:type="description:DAnnotation" uid="_nvgcUHg6Ee2vsZ2LJYutjQ" source="TitleBlockLine" references="_nvgcUXg6Ee2vsZ2LJYutjQ _nvhDYng6Ee2vsZ2LJYutjQ"/>
         <eAnnotations xmi:type="description:DAnnotation" uid="_nvgcUXg6Ee2vsZ2LJYutjQ" source="TitleBlockCell" references="_nv76IHg6Ee2vsZ2LJYutjQ">
@@ -47,6 +47,12 @@
         </eAnnotations>
         <eAnnotations xmi:type="description:DAnnotation" uid="_nv-WYHg6Ee2vsZ2LJYutjQ" source="TitleBlockContent">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nv-WYXg6Ee2vsZ2LJYutjQ" key="Content:" value="This Diagram Identify all the stake holders"/>
+        </eAnnotations>
+        <eAnnotations xmi:type="description:DAnnotation" uid="_Ik6bwKJvEe2SLu_BIbkI_g" source="http://www.polarsys.org/capella/core/StatusReview">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ik-GIKJvEe2SLu_BIbkI_g" key="value" value="EH:&#xA;Assigned Customer Facilities to Pilot Training Center&#xA;Renamed Customer Facilities to Flight Simulator Facilities"/>
+        </eAnnotations>
+        <eAnnotations xmi:type="description:DAnnotation" uid="_RdqlIKJvEe2SLu_BIbkI_g" source="http://www.polarsys.org/capella/core/ProgressStatus">
+          <references xmi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral" href="Flight_Simulator.capella#e80ae472-28fe-469c-a4c2-903644568136"/>
         </eAnnotations>
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']"/>
         <target xmi:type="org.polarsys.capella.core.data.oa:EntityPkg" href="Flight_Simulator.capella#440e5d3c-f8cc-46b9-becd-30c9812a60e2"/>
@@ -395,7 +401,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hVacl5YcEe2OqNDev8co5A"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_hVackZYcEe2OqNDev8co5A" fontName="Segoe UI" fontHeight="8"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hVackpYcEe2OqNDev8co5A" x="810" y="90" width="121" height="70"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hVackpYcEe2OqNDev8co5A" x="800" y="210" width="121" height="70"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_EobeQJYdEe2OqNDev8co5A" visible="false" type="2001" element="_EoPREJYdEe2OqNDev8co5A">
           <children xmi:type="notation:Node" xmi:id="_EocFUJYdEe2OqNDev8co5A" type="5002">
@@ -430,21 +436,6 @@
           <styles xmi:type="notation:ShapeStyle" xmi:id="_M-i0oZYdEe2OqNDev8co5A" fontName="Segoe UI" fontHeight="8"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_M-i0opYdEe2OqNDev8co5A" x="960" y="260" width="70" height="70"/>
         </children>
-        <children xmi:type="notation:Shape" xmi:id="_hgsqEJYdEe2OqNDev8co5A" type="Note" fontName="Segoe UI" description="Merge them?" fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hgsqEZYdEe2OqNDev8co5A" source="specificStyles">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hgsqEpYdEe2OqNDev8co5A" key="verticalAlignment" value="8"/>
-          </eAnnotations>
-          <children xmi:type="notation:BasicDecorationNode" xmi:id="_hgsqFpYdEe2OqNDev8co5A" type="DiagramName">
-            <element xsi:nil="true"/>
-          </children>
-          <children xmi:type="notation:BasicDecorationNode" xmi:id="_hgsqF5YdEe2OqNDev8co5A" type="Description">
-            <element xsi:nil="true"/>
-          </children>
-          <styles xmi:type="notation:TextStyle" xmi:id="_hgsqE5YdEe2OqNDev8co5A" textAlignment="Center"/>
-          <styles xmi:type="notation:LineTypeStyle" xmi:id="_hgsqFJYdEe2OqNDev8co5A"/>
-          <element xsi:nil="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hgsqFZYdEe2OqNDev8co5A" x="880" y="319"/>
-        </children>
         <children xmi:type="notation:Node" xmi:id="_mhWfcJbsEe2W4vaxcdhh1g" visible="false" type="2001" element="_mhGAyJbsEe2W4vaxcdhh1g">
           <children xmi:type="notation:Node" xmi:id="_mhWfc5bsEe2W4vaxcdhh1g" type="5002">
             <layoutConstraint xmi:type="notation:Location" xmi:id="_mhWfdJbsEe2W4vaxcdhh1g" y="5"/>
@@ -467,7 +458,7 @@
           <styles xmi:type="notation:ShapeStyle" xmi:id="_edkZwZbtEe2W4vaxcdhh1g" fontName="Segoe UI" fontHeight="8"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_edkZwpbtEe2W4vaxcdhh1g" x="1190" y="544" width="70" height="70"/>
         </children>
-        <children xmi:type="notation:Node" xmi:id="_bb5P0JheEe2P4_WZsr3vUQ" type="2001" element="_baW-x5heEe2P4_WZsr3vUQ">
+        <children xmi:type="notation:Node" xmi:id="_bb5P0JheEe2P4_WZsr3vUQ" visible="false" type="2001" element="_baW-x5heEe2P4_WZsr3vUQ">
           <children xmi:type="notation:Node" xmi:id="_bb524JheEe2P4_WZsr3vUQ" type="5002">
             <layoutConstraint xmi:type="notation:Location" xmi:id="_bb524ZheEe2P4_WZsr3vUQ" y="5"/>
           </children>
@@ -476,7 +467,7 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bb6d8pheEe2P4_WZsr3vUQ"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_bb5P0ZheEe2P4_WZsr3vUQ" fontName="Segoe UI" fontHeight="8"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bb5P0pheEe2P4_WZsr3vUQ" x="1090" y="509" width="70" height="70"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bb5P0pheEe2P4_WZsr3vUQ" x="640" y="350" width="70" height="70"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_Z4thEng5Ee2vsZ2LJYutjQ"/>
         <edges xmi:type="notation:Edge" xmi:id="_HfgeYID7Ee2qU4rM-dHq6A" type="4001" element="_HfZJoID7Ee2qU4rM-dHq6A" source="_FyVK4ID7Ee2qU4rM-dHq6A" target="_oQyZ4Hg5Ee2vsZ2LJYutjQ">
@@ -605,6 +596,7 @@
           <styles xmi:type="notation:FontStyle" xmi:id="_EocFV5YdEe2OqNDev8co5A" fontName="Segoe UI" fontHeight="8"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_EocFWJYdEe2OqNDev8co5A" points="[0, -35, -33, 105]$[0, -65, -33, 75]$[33, -65, 0, 75]$[33, -84, 0, 56]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EocsZpYdEe2OqNDev8co5A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pMgZAKJvEe2SLu_BIbkI_g" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_IJtzsJYdEe2OqNDev8co5A" visible="false" type="4001" element="_IJkCuJYdEe2OqNDev8co5A" source="_IJtMoJYdEe2OqNDev8co5A" target="_hVackJYcEe2OqNDev8co5A">
           <children xmi:type="notation:Node" xmi:id="_IJtztJYdEe2OqNDev8co5A" type="6001">
@@ -620,6 +612,7 @@
           <styles xmi:type="notation:FontStyle" xmi:id="_IJtzspYdEe2OqNDev8co5A" fontName="Segoe UI" fontHeight="8"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IJtzs5YdEe2OqNDev8co5A" points="[0, -35, 47, 105]$[0, -65, 47, 75]$[-47, -65, 0, 75]$[-47, -84, 0, 56]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IJtzupYdEe2OqNDev8co5A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pMhnIKJvEe2SLu_BIbkI_g" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_M-kCwJYdEe2OqNDev8co5A" visible="false" type="4001" element="_M-YcnpYdEe2OqNDev8co5A" source="_M-i0oJYdEe2OqNDev8co5A" target="_hVackJYcEe2OqNDev8co5A">
           <children xmi:type="notation:Node" xmi:id="_M-kCxJYdEe2OqNDev8co5A" type="6001">
@@ -635,20 +628,7 @@
           <styles xmi:type="notation:FontStyle" xmi:id="_M-kCwpYdEe2OqNDev8co5A" fontName="Segoe UI" fontHeight="8"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_M-kCw5YdEe2OqNDev8co5A" points="[0, -35, 125, 135]$[0, -95, 125, 75]$[-123, -95, 2, 75]$[-123, -135, 2, 35]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_M-kCypYdEe2OqNDev8co5A" id="(0.5,0.5)"/>
-        </edges>
-        <edges xmi:type="notation:Connector" xmi:id="_l5NicJYdEe2OqNDev8co5A" type="NoteAttachment" source="_hgsqEJYdEe2OqNDev8co5A" target="_hVackJYcEe2OqNDev8co5A" lineWidth="1">
-          <styles xmi:type="notation:ArrowStyle" xmi:id="_l5NicZYdEe2OqNDev8co5A"/>
-          <styles xmi:type="notation:LineTypeStyle" xmi:id="_l5NicpYdEe2OqNDev8co5A"/>
-          <element xsi:nil="true"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_l5Nic5YdEe2OqNDev8co5A" points="[0, 0, 57, 194]$[-24, -159, 33, 35]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_l5P-sJYdEe2OqNDev8co5A" id="(0.47,0.0)"/>
-        </edges>
-        <edges xmi:type="notation:Connector" xmi:id="_oRu5AJYdEe2OqNDev8co5A" type="NoteAttachment" source="_hgsqEJYdEe2OqNDev8co5A" target="_oQyZ4Hg5Ee2vsZ2LJYutjQ" lineWidth="1">
-          <styles xmi:type="notation:ArrowStyle" xmi:id="_oRu5AZYdEe2OqNDev8co5A"/>
-          <styles xmi:type="notation:LineTypeStyle" xmi:id="_oRu5ApYdEe2OqNDev8co5A"/>
-          <element xsi:nil="true"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oRu5A5YdEe2OqNDev8co5A" points="[0, 0, 190, 234]$[-139, -240, 51, -6]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oRwuMJYdEe2OqNDev8co5A" id="(0.0,0.7142857142857143)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pMiOMKJvEe2SLu_BIbkI_g" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_u8oCoJbsEe2W4vaxcdhh1g" visible="false" type="4001" element="_u8e4uJbsEe2W4vaxcdhh1g" source="_mhWfcJbsEe2W4vaxcdhh1g" target="_LvNBsI-QEe2HFceckGDQuA">
           <children xmi:type="notation:Node" xmi:id="_u8opsJbsEe2W4vaxcdhh1g" type="6001">
@@ -714,6 +694,37 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hXtuAJheEe2P4_WZsr3vUQ" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hXtuAZheEe2P4_WZsr3vUQ" id="(0.5,0.5)"/>
         </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_AwAVAKJvEe2SLu_BIbkI_g" type="4001" element="_AvqWwKJvEe2SLu_BIbkI_g" source="_hVackJYcEe2OqNDev8co5A" target="_oQyZ4Hg5Ee2vsZ2LJYutjQ">
+          <children xmi:type="notation:Node" xmi:id="_AwF0kKJvEe2SLu_BIbkI_g" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AwF0kaJvEe2SLu_BIbkI_g" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AwGboKJvEe2SLu_BIbkI_g" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AwGboaJvEe2SLu_BIbkI_g" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AwHCsKJvEe2SLu_BIbkI_g" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AwHCsaJvEe2SLu_BIbkI_g" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_AwAVAaJvEe2SLu_BIbkI_g" routing="Tree" jumpLinkStatus="Above" jumpLinkType="Tunnel"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_AwAVAqJvEe2SLu_BIbkI_g" fontName=".AppleSystemUIFont" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AwAVA6JvEe2SLu_BIbkI_g" points="[0, 0, 69, 0]$[-69, 0, 0, 0]"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AwIQ0aJvEe2SLu_BIbkI_g" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_nIU6wKJvEe2SLu_BIbkI_g" type="4001" element="_nIAKoKJvEe2SLu_BIbkI_g" source="_CUNrYI83Ee2mN-2RrbkZYg" target="_tbSiQI8WEe2bYZfq6eMdwQ">
+          <children xmi:type="notation:Node" xmi:id="_nIX-EKJvEe2SLu_BIbkI_g" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nIX-EaJvEe2SLu_BIbkI_g" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_nIYlIKJvEe2SLu_BIbkI_g" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nIYlIaJvEe2SLu_BIbkI_g" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_nIYlIqJvEe2SLu_BIbkI_g" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nIYlI6JvEe2SLu_BIbkI_g" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_nIVh0KJvEe2SLu_BIbkI_g" routing="Tree" jumpLinkStatus="Above" jumpLinkType="Tunnel"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_nIVh0aJvEe2SLu_BIbkI_g" fontName=".AppleSystemUIFont" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nIVh0qJvEe2SLu_BIbkI_g" points="[0, 0, 0, 50]$[0, -50, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nIZMMKJvEe2SLu_BIbkI_g" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nIZMMaJvEe2SLu_BIbkI_g" id="(0.5,0.5)"/>
+        </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_Z5UlEHg5Ee2vsZ2LJYutjQ" source="DANNOTATION_CUSTOMIZATION_KEY">
@@ -733,7 +744,7 @@
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_JE7z0I-QEe2HFceckGDQuA" name="OE 1.1: Simulation Computer" visible="false" outgoingEdges="_JFDvqI-QEe2HFceckGDQuA" width="7" height="7" resizeKind="NSEW">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#e28c1297-05a1-415d-b3c9-9b297372512e"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#e28c1297-05a1-415d-b3c9-9b297372512e"/>
-      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_VUd-kJheEe2P4_WZsr3vUQ"/>
+      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_Vm7gkKJvEe2SLu_BIbkI_g"/>
       <ownedStyle xmi:type="diagram:Square" uid="_JE7z0Y-QEe2HFceckGDQuA" borderSize="1" borderSizeComputationExpression="1" borderColor="69,69,69" labelPosition="node" color="221,221,200">
         <description xmi:type="style:SquareDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']/@style"/>
       </ownedStyle>
@@ -742,7 +753,7 @@
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_LupBBo-QEe2HFceckGDQuA" name="OE 1.2: Shrouded Cockpit" visible="false" outgoingEdges="_Lut5jI-QEe2HFceckGDQuA" incomingEdges="_Xey1UI-QEe2HFceckGDQuA _u8e4uJbsEe2W4vaxcdhh1g _io2ugJbtEe2W4vaxcdhh1g _hXENwJheEe2P4_WZsr3vUQ" width="7" height="7" resizeKind="NSEW">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#4c8a6d8a-30dc-4ef9-bb3d-8807061311ec"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#4c8a6d8a-30dc-4ef9-bb3d-8807061311ec"/>
-      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_VUd-kpheEe2P4_WZsr3vUQ"/>
+      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_Vm_K8KJvEe2SLu_BIbkI_g"/>
       <ownedStyle xmi:type="diagram:Square" uid="_LupBB4-QEe2HFceckGDQuA" borderSize="1" borderSizeComputationExpression="1" borderColor="69,69,69" labelPosition="node" color="221,221,200">
         <description xmi:type="style:SquareDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']/@style"/>
       </ownedStyle>
@@ -751,7 +762,7 @@
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_uoy2xI-QEe2HFceckGDQuA" name="OE 1.4: Power System" visible="false" outgoingEdges="_uo16GI-QEe2HFceckGDQuA" width="7" height="7" resizeKind="NSEW">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#890baf3a-cb90-4719-8860-e4b124a1ba6e"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#890baf3a-cb90-4719-8860-e4b124a1ba6e"/>
-      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_VUelo5heEe2P4_WZsr3vUQ"/>
+      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_Vm_K-qJvEe2SLu_BIbkI_g"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -763,7 +774,7 @@
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_y-T68o-PEe2HFceckGDQuA" name="OE 1.3: Instructor station" visible="false" outgoingEdges="_rCUT0JbtEe2W4vaxcdhh1g" width="7" height="7" resizeKind="NSEW">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#c20ec16a-3e4a-420d-9cee-b3f23aaa7874"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#c20ec16a-3e4a-420d-9cee-b3f23aaa7874"/>
-      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_VUelpZheEe2P4_WZsr3vUQ"/>
+      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_Vm_K_KJvEe2SLu_BIbkI_g"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -775,7 +786,7 @@
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_QcfQOI-QEe2HFceckGDQuA" name="OE 1.2.1: Pilot Station" visible="false" outgoingEdges="_Xey1UI-QEe2HFceckGDQuA" width="7" height="7" resizeKind="NSEW">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#a434d41c-e8db-47c4-87fe-3a4b7ee9304f"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#a434d41c-e8db-47c4-87fe-3a4b7ee9304f"/>
-      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_VUd-lJheEe2P4_WZsr3vUQ"/>
+      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_Vm_K8qJvEe2SLu_BIbkI_g"/>
       <ownedStyle xmi:type="diagram:Square" uid="_Qcf3QI-QEe2HFceckGDQuA" borderSize="1" borderSizeComputationExpression="1" borderColor="69,69,69" labelPosition="node" color="221,221,200">
         <description xmi:type="style:SquareDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']/@style"/>
       </ownedStyle>
@@ -784,7 +795,7 @@
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_mhGAyJbsEe2W4vaxcdhh1g" name="OE 1.2.2: Motion System" visible="false" outgoingEdges="_u8e4uJbsEe2W4vaxcdhh1g" width="7" height="7" resizeKind="NSEW">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#fcc3dfc6-d353-4ee3-be41-61c43ffa61a6"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#fcc3dfc6-d353-4ee3-be41-61c43ffa61a6"/>
-      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_VUd-lpheEe2P4_WZsr3vUQ"/>
+      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_Vm_K9KJvEe2SLu_BIbkI_g"/>
       <ownedStyle xmi:type="diagram:Square" uid="_mhGn0JbsEe2W4vaxcdhh1g" borderSize="1" borderSizeComputationExpression="1" borderColor="69,69,69" labelPosition="node" color="221,221,200">
         <description xmi:type="style:SquareDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']/@style"/>
       </ownedStyle>
@@ -793,21 +804,25 @@
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_edUiKJbtEe2W4vaxcdhh1g" name="OE 1.2.3: Force feedback System" visible="false" outgoingEdges="_io2ugJbtEe2W4vaxcdhh1g" width="7" height="7" resizeKind="NSEW">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#6b27022d-1ed3-4c81-a42e-3c69735b850f"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#6b27022d-1ed3-4c81-a42e-3c69735b850f"/>
-      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_VUeloZheEe2P4_WZsr3vUQ"/>
+      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_Vm_K9qJvEe2SLu_BIbkI_g"/>
       <ownedStyle xmi:type="diagram:Square" uid="_edVJMJbtEe2W4vaxcdhh1g" borderSize="1" borderSizeComputationExpression="1" borderColor="69,69,69" labelPosition="node" color="221,221,200">
         <description xmi:type="style:SquareDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_baW-x5heEe2P4_WZsr3vUQ" name="OE 1.2.4: Visual System" outgoingEdges="_hXENwJheEe2P4_WZsr3vUQ" width="7" height="7" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_baW-x5heEe2P4_WZsr3vUQ" name="OE 1.2.4: Visual System" visible="false" outgoingEdges="_hXENwJheEe2P4_WZsr3vUQ" width="7" height="7" resizeKind="NSEW">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#cfc469aa-7c15-44e0-8872-227968181760"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#cfc469aa-7c15-44e0-8872-227968181760"/>
+      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_Vm_K-KJvEe2SLu_BIbkI_g"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:Square" uid="_baW-yJheEe2P4_WZsr3vUQ" borderSize="1" borderSizeComputationExpression="1" borderColor="69,69,69" labelPosition="node" color="221,221,200">
         <description xmi:type="style:SquareDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_oQamcHg5Ee2vsZ2LJYutjQ" name="Pilot Training Center" incomingEdges="_HfZJoID7Ee2qU4rM-dHq6A _JTEtxID7Ee2qU4rM-dHq6A" width="7" height="7" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_oQamcHg5Ee2vsZ2LJYutjQ" name="Pilot Training Center" incomingEdges="_HfZJoID7Ee2qU4rM-dHq6A _JTEtxID7Ee2qU4rM-dHq6A _AvqWwKJvEe2SLu_BIbkI_g" width="7" height="7" resizeKind="NSEW">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#673259db-f2cb-4a9d-8f2e-64960c978218"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#673259db-f2cb-4a9d-8f2e-64960c978218"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -840,29 +855,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_taf4Eo8WEe2bYZfq6eMdwQ" name="Air Training Device (ATD) Manufacturer" width="7" height="7" resizeKind="NSEW">
-      <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#9706125c-439c-433e-a146-0e21ec89eb12"/>
-      <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#9706125c-439c-433e-a146-0e21ec89eb12"/>
-      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:Square" uid="_tagfII8WEe2bYZfq6eMdwQ" borderSize="1" borderSizeComputationExpression="1" borderColor="69,69,69" labelPosition="node" color="221,221,200">
-        <description xmi:type="style:SquareDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']/@style"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_taiUUI8WEe2bYZfq6eMdwQ" name="Federal Aviation Administration (FAA)" width="7" height="7" resizeKind="NSEW">
-      <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
-      <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
-      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:Square" uid="_taiUUY8WEe2bYZfq6eMdwQ" borderSize="1" borderSizeComputationExpression="1" borderColor="69,69,69" labelPosition="node" color="221,221,200">
-        <description xmi:type="style:SquareDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']/@style"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_hVOPUJYcEe2OqNDev8co5A" name="OE 5 : Customer Facilities" incomingEdges="_EoS7ZJYdEe2OqNDev8co5A _IJkCuJYdEe2OqNDev8co5A _M-YcnpYdEe2OqNDev8co5A" width="7" height="7" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_hVOPUJYcEe2OqNDev8co5A" name="OE 5 : Flight Simulator Facilities" outgoingEdges="_AvqWwKJvEe2SLu_BIbkI_g" incomingEdges="_EoS7ZJYdEe2OqNDev8co5A _IJkCuJYdEe2OqNDev8co5A _M-YcnpYdEe2OqNDev8co5A" width="7" height="7" resizeKind="NSEW">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#5cb55cd4-ea45-4513-a8f2-0a169cb3a063"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#5cb55cd4-ea45-4513-a8f2-0a169cb3a063"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -876,7 +869,7 @@
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_EoPREJYdEe2OqNDev8co5A" name="OE 5.1: Power Supply" visible="false" outgoingEdges="_EoS7ZJYdEe2OqNDev8co5A" width="7" height="7" resizeKind="NSEW">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#8f55fb41-0df8-4471-bfdd-2207f186d076"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#8f55fb41-0df8-4471-bfdd-2207f186d076"/>
-      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_eXMigZYdEe2OqNDev8co5A"/>
+      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_qnmeAKJvEe2SLu_BIbkI_g"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -888,7 +881,7 @@
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_IJg_aJYdEe2OqNDev8co5A" name="OE 5.2: Foundations" visible="false" outgoingEdges="_IJkCuJYdEe2OqNDev8co5A" width="7" height="7" resizeKind="NSEW">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#2f82cfa4-dbd2-4c70-a847-48a1c4f818c6"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#2f82cfa4-dbd2-4c70-a847-48a1c4f818c6"/>
-      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_eXMig5YdEe2OqNDev8co5A"/>
+      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_qnmeAqJvEe2SLu_BIbkI_g"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -900,7 +893,7 @@
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_M-UyN5YdEe2OqNDev8co5A" name="OE 5.3: HVAC" visible="false" outgoingEdges="_M-YcnpYdEe2OqNDev8co5A" width="7" height="7" resizeKind="NSEW">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#653dad97-4012-4c85-9bd4-c33cd7c901dd"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#653dad97-4012-4c85-9bd4-c33cd7c901dd"/>
-      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_eXMihZYdEe2OqNDev8co5A"/>
+      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_qnnFEaJvEe2SLu_BIbkI_g"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -909,7 +902,29 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_CTyNko83Ee2mN-2RrbkZYg" name="Aviation Safety Inspector (ASI)" width="7" height="7" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_taf4Eo8WEe2bYZfq6eMdwQ" name="Air Training Device (ATD) Manufacturer" width="7" height="7" resizeKind="NSEW">
+      <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#9706125c-439c-433e-a146-0e21ec89eb12"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#9706125c-439c-433e-a146-0e21ec89eb12"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_tagfII8WEe2bYZfq6eMdwQ" borderSize="1" borderSizeComputationExpression="1" borderColor="69,69,69" labelPosition="node" color="221,221,200">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_taiUUI8WEe2bYZfq6eMdwQ" name="Federal Aviation Administration (FAA)" incomingEdges="_nIAKoKJvEe2SLu_BIbkI_g" width="7" height="7" resizeKind="NSEW">
+      <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_taiUUY8WEe2bYZfq6eMdwQ" borderSize="1" borderSizeComputationExpression="1" borderColor="69,69,69" labelPosition="node" color="221,221,200">
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@nodeMappings[name='OEB_OperationalEntities']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_CTyNko83Ee2mN-2RrbkZYg" name="Aviation Safety Inspector (ASI)" outgoingEdges="_nIAKoKJvEe2SLu_BIbkI_g" width="7" height="7" resizeKind="NSEW">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#ebb518b3-b5c0-43c8-a17b-0e880147699a"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#ebb518b3-b5c0-43c8-a17b-0e880147699a"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1027,7 +1042,7 @@
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_JFDvqI-QEe2HFceckGDQuA" visible="false" sourceNode="_JE7z0I-QEe2HFceckGDQuA" targetNode="_cRhLgHg5Ee2vsZ2LJYutjQ">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#e28c1297-05a1-415d-b3c9-9b297372512e"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Flight_Simulator.capella#24766612-5b3e-4285-8c51-559436a1e8d7"/>
-      <graphicalFilters xmi:type="diagram:FoldingPointFilter" uid="_VUdXgJheEe2P4_WZsr3vUQ"/>
+      <graphicalFilters xmi:type="diagram:FoldingPointFilter" uid="_Vm32MKJvEe2SLu_BIbkI_g"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_JFEWsI-QEe2HFceckGDQuA" foldingStyle="TARGET" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@edgeMappings[name='containedIn%20Mapping']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_JFEWsY-QEe2HFceckGDQuA"/>
@@ -1037,7 +1052,7 @@
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Lut5jI-QEe2HFceckGDQuA" visible="false" sourceNode="_LupBBo-QEe2HFceckGDQuA" targetNode="_cRhLgHg5Ee2vsZ2LJYutjQ">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#4c8a6d8a-30dc-4ef9-bb3d-8807061311ec"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Flight_Simulator.capella#c4839a6a-dbc7-442d-ab7f-2b0a553af426"/>
-      <graphicalFilters xmi:type="diagram:FoldingPointFilter" uid="_VUd-kZheEe2P4_WZsr3vUQ"/>
+      <graphicalFilters xmi:type="diagram:FoldingPointFilter" uid="_Vm980KJvEe2SLu_BIbkI_g"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_LuugkI-QEe2HFceckGDQuA" foldingStyle="TARGET" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@edgeMappings[name='containedIn%20Mapping']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_LuugkY-QEe2HFceckGDQuA"/>
@@ -1047,7 +1062,7 @@
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Xey1UI-QEe2HFceckGDQuA" visible="false" sourceNode="_QcfQOI-QEe2HFceckGDQuA" targetNode="_LupBBo-QEe2HFceckGDQuA">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#a434d41c-e8db-47c4-87fe-3a4b7ee9304f"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Flight_Simulator.capella#51146eca-c06b-470c-9fe6-5c244d20fe45"/>
-      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_VUd-k5heEe2P4_WZsr3vUQ"/>
+      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_Vm_K8aJvEe2SLu_BIbkI_g"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Xey1UY-QEe2HFceckGDQuA" foldingStyle="TARGET" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@edgeMappings[name='containedIn%20Mapping']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Xey1Uo-QEe2HFceckGDQuA"/>
@@ -1057,7 +1072,7 @@
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_uo16GI-QEe2HFceckGDQuA" visible="false" sourceNode="_uoy2xI-QEe2HFceckGDQuA" targetNode="_cRhLgHg5Ee2vsZ2LJYutjQ">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#890baf3a-cb90-4719-8860-e4b124a1ba6e"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Flight_Simulator.capella#a19dc5c6-61a8-45fa-b56c-7f839472bd54"/>
-      <graphicalFilters xmi:type="diagram:FoldingPointFilter" uid="_VUelopheEe2P4_WZsr3vUQ"/>
+      <graphicalFilters xmi:type="diagram:FoldingPointFilter" uid="_Vm_K-aJvEe2SLu_BIbkI_g"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_uo4WUI-QEe2HFceckGDQuA" foldingStyle="TARGET" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@edgeMappings[name='containedIn%20Mapping']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_uo4WUY-QEe2HFceckGDQuA"/>
@@ -1067,7 +1082,7 @@
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_EoS7ZJYdEe2OqNDev8co5A" visible="false" sourceNode="_EoPREJYdEe2OqNDev8co5A" targetNode="_hVOPUJYcEe2OqNDev8co5A">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#8f55fb41-0df8-4471-bfdd-2207f186d076"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Flight_Simulator.capella#9ce36622-a21e-4ede-8c84-eca87bbc03af"/>
-      <graphicalFilters xmi:type="diagram:FoldingPointFilter" uid="_eXMigJYdEe2OqNDev8co5A"/>
+      <graphicalFilters xmi:type="diagram:FoldingPointFilter" uid="_qnl28KJvEe2SLu_BIbkI_g"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_EoS7ZZYdEe2OqNDev8co5A" foldingStyle="TARGET" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@edgeMappings[name='containedIn%20Mapping']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_EoS7ZpYdEe2OqNDev8co5A"/>
@@ -1077,7 +1092,7 @@
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_IJkCuJYdEe2OqNDev8co5A" visible="false" sourceNode="_IJg_aJYdEe2OqNDev8co5A" targetNode="_hVOPUJYcEe2OqNDev8co5A">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#2f82cfa4-dbd2-4c70-a847-48a1c4f818c6"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Flight_Simulator.capella#0a549765-f796-4b42-b052-5bee269468f1"/>
-      <graphicalFilters xmi:type="diagram:FoldingPointFilter" uid="_eXMigpYdEe2OqNDev8co5A"/>
+      <graphicalFilters xmi:type="diagram:FoldingPointFilter" uid="_qnmeAaJvEe2SLu_BIbkI_g"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_IJkCuZYdEe2OqNDev8co5A" foldingStyle="TARGET" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@edgeMappings[name='containedIn%20Mapping']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_IJkCupYdEe2OqNDev8co5A"/>
@@ -1087,7 +1102,7 @@
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_M-YcnpYdEe2OqNDev8co5A" visible="false" sourceNode="_M-UyN5YdEe2OqNDev8co5A" targetNode="_hVOPUJYcEe2OqNDev8co5A">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#653dad97-4012-4c85-9bd4-c33cd7c901dd"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Flight_Simulator.capella#2e8ab5a3-866a-4932-9ce0-cf7c85b78737"/>
-      <graphicalFilters xmi:type="diagram:FoldingPointFilter" uid="_eXMihJYdEe2OqNDev8co5A"/>
+      <graphicalFilters xmi:type="diagram:FoldingPointFilter" uid="_qnnFEKJvEe2SLu_BIbkI_g"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_M-ZDoJYdEe2OqNDev8co5A" foldingStyle="TARGET" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@edgeMappings[name='containedIn%20Mapping']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_M-ZDoZYdEe2OqNDev8co5A"/>
@@ -1097,7 +1112,7 @@
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_u8e4uJbsEe2W4vaxcdhh1g" visible="false" sourceNode="_mhGAyJbsEe2W4vaxcdhh1g" targetNode="_LupBBo-QEe2HFceckGDQuA">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#fcc3dfc6-d353-4ee3-be41-61c43ffa61a6"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Flight_Simulator.capella#52d4d93d-2a5d-4223-a219-e6881ebfd88c"/>
-      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_VUd-lZheEe2P4_WZsr3vUQ"/>
+      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_Vm_K86JvEe2SLu_BIbkI_g"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_u8ffwJbsEe2W4vaxcdhh1g" foldingStyle="TARGET" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@edgeMappings[name='containedIn%20Mapping']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_u8ffwZbsEe2W4vaxcdhh1g"/>
@@ -1107,7 +1122,7 @@
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_io2ugJbtEe2W4vaxcdhh1g" visible="false" sourceNode="_edUiKJbtEe2W4vaxcdhh1g" targetNode="_LupBBo-QEe2HFceckGDQuA">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#6b27022d-1ed3-4c81-a42e-3c69735b850f"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Flight_Simulator.capella#0cbb7006-c35f-4020-9fe8-820239dd879e"/>
-      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_VUeloJheEe2P4_WZsr3vUQ"/>
+      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_Vm_K9aJvEe2SLu_BIbkI_g"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_io3VgJbtEe2W4vaxcdhh1g" foldingStyle="TARGET" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@edgeMappings[name='containedIn%20Mapping']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_io3VgZbtEe2W4vaxcdhh1g"/>
@@ -1117,7 +1132,7 @@
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_rCUT0JbtEe2W4vaxcdhh1g" visible="false" sourceNode="_y-T68o-PEe2HFceckGDQuA" targetNode="_cRhLgHg5Ee2vsZ2LJYutjQ">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#c20ec16a-3e4a-420d-9cee-b3f23aaa7874"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Flight_Simulator.capella#904d78fc-0f2e-40bd-9ff2-e78c66cb0e18"/>
-      <graphicalFilters xmi:type="diagram:FoldingPointFilter" uid="_VUelpJheEe2P4_WZsr3vUQ"/>
+      <graphicalFilters xmi:type="diagram:FoldingPointFilter" uid="_Vm_K-6JvEe2SLu_BIbkI_g"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_rCU60JbtEe2W4vaxcdhh1g" foldingStyle="TARGET" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@edgeMappings[name='containedIn%20Mapping']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_rCU60ZbtEe2W4vaxcdhh1g"/>
@@ -1127,9 +1142,28 @@
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_hXENwJheEe2P4_WZsr3vUQ" visible="false" sourceNode="_baW-x5heEe2P4_WZsr3vUQ" targetNode="_LupBBo-QEe2HFceckGDQuA">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#cfc469aa-7c15-44e0-8872-227968181760"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Flight_Simulator.capella#529dbc0e-a7a3-4c8f-9865-2575fbcecd35"/>
+      <graphicalFilters xmi:type="diagram:FoldingFilter" uid="_Vm_K96JvEe2SLu_BIbkI_g"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_hXE00JheEe2P4_WZsr3vUQ" foldingStyle="TARGET" routingStyle="tree">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@edgeMappings[name='containedIn%20Mapping']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_hXE00ZheEe2P4_WZsr3vUQ"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@edgeMappings[name='containedIn%20Mapping']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_AvqWwKJvEe2SLu_BIbkI_g" sourceNode="_hVOPUJYcEe2OqNDev8co5A" targetNode="_oQamcHg5Ee2vsZ2LJYutjQ">
+      <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#5cb55cd4-ea45-4513-a8f2-0a169cb3a063"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Flight_Simulator.capella#484da6be-7979-413e-a871-5a22f04352f3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_AvwdYKJvEe2SLu_BIbkI_g" foldingStyle="TARGET" routingStyle="tree">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@edgeMappings[name='containedIn%20Mapping']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_AvwdYaJvEe2SLu_BIbkI_g"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@edgeMappings[name='containedIn%20Mapping']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_nIAKoKJvEe2SLu_BIbkI_g" sourceNode="_CTyNko83Ee2mN-2RrbkZYg" targetNode="_taiUUI8WEe2bYZfq6eMdwQ">
+      <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#ebb518b3-b5c0-43c8-a17b-0e880147699a"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Flight_Simulator.capella#e2330636-f847-40d0-b27c-72c49abe88be"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_nIEcEKJvEe2SLu_BIbkI_g" foldingStyle="TARGET" routingStyle="tree">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@edgeMappings[name='containedIn%20Mapping']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_nIEcEaJvEe2SLu_BIbkI_g"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']/@defaultLayer/@edgeMappings[name='containedIn%20Mapping']"/>
     </ownedDiagramElements>

@@ -205,7 +205,7 @@
         </ownedOperationalActivities>
       </ownedFunctionPkg>
       <ownedRequirementPkgs xsi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg"
-          id="872a8cf1-35de-45a1-bcca-43f5200697c7" name="RequirementsPkg 1">
+          id="872a8cf1-35de-45a1-bcca-43f5200697c7" name="Custormer Requirements">
         <ownedRequirements xsi:type="org.polarsys.capella.core.data.requirement:SystemUserRequirement"
             id="cfca9d1b-86df-4052-b13f-bf7ccb81b232" name="SystemUserRequirement 1"/>
         <ownedRequirements xsi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement"
@@ -367,10 +367,6 @@
             name="Air Training Device (ATD) Manufacturer" abstractType="#9706125c-439c-433e-a146-0e21ec89eb12"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="bcf7da64-ec23-4100-b56e-1e72a6e51c5b"
             name="Federal Aviation Administration (FAA)" abstractType="#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
-        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="484da6be-7979-413e-a871-5a22f04352f3"
-            name="OE 5 : Customer Facilities" abstractType="#5cb55cd4-ea45-4513-a8f2-0a169cb3a063"/>
-        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="e2330636-f847-40d0-b27c-72c49abe88be"
-            name="Aviation Safety Inspector (ASI)" abstractType="#ebb518b3-b5c0-43c8-a17b-0e880147699a"/>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.oa:CommunicationMean"
             id="94ddc588-b14b-4ec5-9154-0945699ed1bc" name="This should be a communication mean"
             source="#ebb518b3-b5c0-43c8-a17b-0e880147699a" target="#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
@@ -501,10 +497,39 @@
               name="Student Pilot" abstractType="#c655779a-702d-4068-8722-1f384178399f"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="95ccf64e-d54d-4f27-b2d8-1e15c92db407"
               name="Instructor" abstractType="#8d8b70db-34e9-4561-ab2c-5d6ca5aa1c16"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="484da6be-7979-413e-a871-5a22f04352f3"
+              name="OE 5 : Flight Simulator Facilities" abstractType="#5cb55cd4-ea45-4513-a8f2-0a169cb3a063"/>
           <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="c655779a-702d-4068-8722-1f384178399f"
               name="Student Pilot" actor="true" human="true"/>
           <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="8d8b70db-34e9-4561-ab2c-5d6ca5aa1c16"
               name="Instructor" actor="true" human="true"/>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="5cb55cd4-ea45-4513-a8f2-0a169cb3a063"
+              name="OE 5 : Flight Simulator Facilities">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="9ce36622-a21e-4ede-8c84-eca87bbc03af"
+                name="OE 5.1: Power Supply" abstractType="#8f55fb41-0df8-4471-bfdd-2207f186d076"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="0a549765-f796-4b42-b052-5bee269468f1"
+                name="OE 5.2: Foundations" abstractType="#2f82cfa4-dbd2-4c70-a847-48a1c4f818c6"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="2e8ab5a3-866a-4932-9ce0-cf7c85b78737"
+                name="OE 5.3: HVAC" abstractType="#653dad97-4012-4c85-9bd4-c33cd7c901dd"/>
+            <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="8f55fb41-0df8-4471-bfdd-2207f186d076"
+                name="OE 5.1: Power Supply">
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="d1ddb801-c34c-41b1-83b6-191cc5d6eb92" targetElement="#d13a3f29-f128-416b-be47-9a6e32a38f33"
+                  sourceElement="#8f55fb41-0df8-4471-bfdd-2207f186d076"/>
+            </ownedEntities>
+            <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="2f82cfa4-dbd2-4c70-a847-48a1c4f818c6"
+                name="OE 5.2: Foundations">
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="63e78a7e-9264-4a2c-9524-f404a4e8a95a" targetElement="#546a1575-43d1-4ca2-8f2f-c3d675b687c1"
+                  sourceElement="#2f82cfa4-dbd2-4c70-a847-48a1c4f818c6"/>
+            </ownedEntities>
+            <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="653dad97-4012-4c85-9bd4-c33cd7c901dd"
+                name="OE 5.3: HVAC">
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="a94288fc-4eed-4a63-8477-e496e02fd798" targetElement="#05a23d42-6e4a-442c-ac0b-0dc11879e52c"
+                  sourceElement="#653dad97-4012-4c85-9bd4-c33cd7c901dd"/>
+            </ownedEntities>
+          </ownedEntities>
         </ownedEntities>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="9706125c-439c-433e-a146-0e21ec89eb12"
             name="Air Training Device (ATD) Manufacturer" summary="ATD design and builder">
@@ -538,45 +563,20 @@
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="ae7b1c76-77a1-4cd9-8ab7-4a1cb3b581df" targetElement="#e091632f-4ccc-4366-b882-b41d73b8de8c"
               sourceElement="#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e2330636-f847-40d0-b27c-72c49abe88be"
+              name="Aviation Safety Inspector (ASI)" abstractType="#ebb518b3-b5c0-43c8-a17b-0e880147699a"/>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="ebb518b3-b5c0-43c8-a17b-0e880147699a"
+              name="Aviation Safety Inspector (ASI)" actor="true" human="true">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="0e032e5f-aa2e-479b-b74c-05146fbadc75" targetElement="#706b9df5-c456-45d1-8d14-6541061cdca8"
+                sourceElement="#ebb518b3-b5c0-43c8-a17b-0e880147699a"/>
+          </ownedEntities>
           <ownedRoleAllocations xsi:type="org.polarsys.capella.core.data.oa:RoleAllocation"
               id="924eddea-80e6-4252-b08e-30def8a126a8" targetElement="#19b1d825-78b3-46a6-aa6a-0c093a754c1e"
               sourceElement="#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
           <ownedRoleAllocations xsi:type="org.polarsys.capella.core.data.oa:RoleAllocation"
               id="9e336d28-d295-47b4-af51-2d4d4869b058" targetElement="#abba5440-71c0-45ba-93c1-4e2c9077af34"
               sourceElement="#fcd56164-86b8-478d-9ab4-898c54ec74bc"/>
-        </ownedEntities>
-        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="5cb55cd4-ea45-4513-a8f2-0a169cb3a063"
-            name="OE 5 : Customer Facilities">
-          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="9ce36622-a21e-4ede-8c84-eca87bbc03af"
-              name="OE 5.1: Power Supply" abstractType="#8f55fb41-0df8-4471-bfdd-2207f186d076"/>
-          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="0a549765-f796-4b42-b052-5bee269468f1"
-              name="OE 5.2: Foundations" abstractType="#2f82cfa4-dbd2-4c70-a847-48a1c4f818c6"/>
-          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="2e8ab5a3-866a-4932-9ce0-cf7c85b78737"
-              name="OE 5.3: HVAC" abstractType="#653dad97-4012-4c85-9bd4-c33cd7c901dd"/>
-          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="8f55fb41-0df8-4471-bfdd-2207f186d076"
-              name="OE 5.1: Power Supply">
-            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                id="d1ddb801-c34c-41b1-83b6-191cc5d6eb92" targetElement="#d13a3f29-f128-416b-be47-9a6e32a38f33"
-                sourceElement="#8f55fb41-0df8-4471-bfdd-2207f186d076"/>
-          </ownedEntities>
-          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="2f82cfa4-dbd2-4c70-a847-48a1c4f818c6"
-              name="OE 5.2: Foundations">
-            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                id="63e78a7e-9264-4a2c-9524-f404a4e8a95a" targetElement="#546a1575-43d1-4ca2-8f2f-c3d675b687c1"
-                sourceElement="#2f82cfa4-dbd2-4c70-a847-48a1c4f818c6"/>
-          </ownedEntities>
-          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="653dad97-4012-4c85-9bd4-c33cd7c901dd"
-              name="OE 5.3: HVAC">
-            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                id="a94288fc-4eed-4a63-8477-e496e02fd798" targetElement="#05a23d42-6e4a-442c-ac0b-0dc11879e52c"
-                sourceElement="#653dad97-4012-4c85-9bd4-c33cd7c901dd"/>
-          </ownedEntities>
-        </ownedEntities>
-        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="ebb518b3-b5c0-43c8-a17b-0e880147699a"
-            name="Aviation Safety Inspector (ASI)" actor="true" human="true">
-          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-              id="0e032e5f-aa2e-479b-b74c-05146fbadc75" targetElement="#706b9df5-c456-45d1-8d14-6541061cdca8"
-              sourceElement="#ebb518b3-b5c0-43c8-a17b-0e880147699a"/>
         </ownedEntities>
       </ownedEntityPkg>
     </ownedArchitectures>
