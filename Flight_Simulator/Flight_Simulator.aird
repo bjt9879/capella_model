@@ -57,7 +57,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Breakdown']"/>
         <target xmi:type="org.polarsys.capella.core.data.oa:EntityPkg" href="Flight_Simulator.capella#440e5d3c-f8cc-46b9-becd-30c9812a60e2"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_lQi_EIEYEe2eGKwyVbw0_A" name="[OCB] 1: System Operational Capabilities" repPath="#_lQetoIEYEe2eGKwyVbw0_A" changeId="838d0f85-edd9-48a1-b73c-bf1c9cd6eaf8">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_lQi_EIEYEe2eGKwyVbw0_A" name="[OCB] 1: System Operational Capabilities" repPath="#_lQetoIEYEe2eGKwyVbw0_A" changeId="a621690a-0404-46e0-92eb-fdf0f5291497">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Capabilities%20Blank']"/>
         <target xmi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg" href="Flight_Simulator.capella#e0b4468e-d40c-4f58-9500-2beca0bc4de6"/>
       </ownedRepresentationDescriptors>
@@ -87,7 +87,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Activity%20Interaction%20Blank']"/>
         <target xmi:type="org.polarsys.capella.core.data.oa:OperationalActivity" href="Flight_Simulator.capella#196fc9ef-81bd-4b50-a743-b4e36462cbb3"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_xH55UJbqEe2W4vaxcdhh1g" name="[OAB] 2: System Capabilities [Rename]" repPath="#_xH5SQJbqEe2W4vaxcdhh1g" changeId="dc9a2920-368a-4606-8daf-dbbf9cce7705">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_xH55UJbqEe2W4vaxcdhh1g" name="[OAB] 2: System Capabilities [Rename]" repPath="#_xH5SQJbqEe2W4vaxcdhh1g" changeId="3cfe7a81-b685-4d7f-8bc9-eef5477a4ede">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Entity%20Blank']"/>
         <target xmi:type="org.polarsys.capella.core.data.oa:EntityPkg" href="Flight_Simulator.capella#440e5d3c-f8cc-46b9-becd-30c9812a60e2"/>
       </ownedRepresentationDescriptors>
@@ -1267,6 +1267,17 @@
           <styles xmi:type="notation:ShapeStyle" xmi:id="_wb9OwZbpEe2W4vaxcdhh1g" fontName="Segoe UI" fontHeight="8"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wb9OwpbpEe2W4vaxcdhh1g" x="541" y="100" width="70" height="46"/>
         </children>
+        <children xmi:type="notation:Node" xmi:id="_iniv0KJyEe2wX6mm17kbQg" type="2001" element="_ik32UKJyEe2wX6mm17kbQg">
+          <children xmi:type="notation:Node" xmi:id="_inwyQKJyEe2wX6mm17kbQg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_inwyQaJyEe2wX6mm17kbQg" x="-12" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ipDLsKJyEe2wX6mm17kbQg" type="3005" element="_ik8HwKJyEe2wX6mm17kbQg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_ipDLsaJyEe2wX6mm17kbQg" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ipDLsqJyEe2wX6mm17kbQg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_injW4KJyEe2wX6mm17kbQg" fontName=".AppleSystemUIFont" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_injW4aJyEe2wX6mm17kbQg" x="240" y="100" width="70" height="46"/>
+        </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_lQulQoEYEe2eGKwyVbw0_A"/>
         <edges xmi:type="notation:Edge" xmi:id="_35r9EIEbEe2eGKwyVbw0_A" type="4001" element="_35ESBoEbEe2eGKwyVbw0_A" source="_mLEmQIEbEe2eGKwyVbw0_A" target="_2Oz3AIEYEe2eGKwyVbw0_A">
           <children xmi:type="notation:Node" xmi:id="_35r9FIEbEe2eGKwyVbw0_A" type="6001">
@@ -1423,6 +1434,21 @@
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_EKJQo5bqEe2W4vaxcdhh1g" points="[23, 7, -182, -190]$[208, 197, 3, 0]"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EKJ3tZbqEe2W4vaxcdhh1g" id="(0.0,0.41304347826086957)"/>
         </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_rIby0KJyEe2wX6mm17kbQg" type="4001" element="_rGq4RKJyEe2wX6mm17kbQg" source="_iniv0KJyEe2wX6mm17kbQg" target="_53P9UIEYEe2eGKwyVbw0_A">
+          <children xmi:type="notation:Node" xmi:id="_rIe2IKJyEe2wX6mm17kbQg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rIe2IaJyEe2wX6mm17kbQg" x="-11" y="1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rIfdMKJyEe2wX6mm17kbQg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rIfdMaJyEe2wX6mm17kbQg" x="10" y="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rIgEQKJyEe2wX6mm17kbQg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rIgEQaJyEe2wX6mm17kbQg" x="6"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_rIby0aJyEe2wX6mm17kbQg" jumpLinkStatus="Above" jumpLinkType="Tunnel"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_rIby0qJyEe2wX6mm17kbQg" fontName=".AppleSystemUIFont" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rIby06JyEe2wX6mm17kbQg" points="[21, 9, -149, -169]$[160, 167, -10, -11]"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rIhSYaJyEe2wX6mm17kbQg" id="(0.23648648648648649,0.16176470588235295)"/>
+        </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_lQzdwIEYEe2eGKwyVbw0_A" source="DANNOTATION_CUSTOMIZATION_KEY">
@@ -1450,7 +1476,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Capabilities%20Blank']/@defaultLayer/@containerMappings[name='COC_OperationalEntities']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_53J2sIEYEe2eGKwyVbw0_A" name="OE 1: Simulator" incomingEdges="_4SO_9IEbEe2eGKwyVbw0_A _NM0jpIEcEe2eGKwyVbw0_A _5fhVoIEfEe2eGKwyVbw0_A _s0bucJbpEe2W4vaxcdhh1g _wyA-VJbpEe2W4vaxcdhh1g">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_53J2sIEYEe2eGKwyVbw0_A" name="OE 1: Simulator" incomingEdges="_4SO_9IEbEe2eGKwyVbw0_A _NM0jpIEcEe2eGKwyVbw0_A _5fhVoIEfEe2eGKwyVbw0_A _s0bucJbpEe2W4vaxcdhh1g _wyA-VJbpEe2W4vaxcdhh1g _rGq4RKJyEe2wX6mm17kbQg">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#12a7e49e-67c7-479e-82a5-1d970191e40f"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#12a7e49e-67c7-479e-82a5-1d970191e40f"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1512,6 +1538,17 @@
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_wb3IIZbpEe2W4vaxcdhh1g" showIcon="false" workspacePath="/org.polarsys.capella.core.sirius.analysis/description/images/OperationalCapability.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Capabilities%20Blank']/@defaultLayer/@nodeMappings[name='COC_OperationalCapabilities']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Capabilities%20Blank']/@defaultLayer/@nodeMappings[name='COC_OperationalCapabilities']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_ik32UKJyEe2wX6mm17kbQg" name="OC 9: Provides a 6DOF Motion cabin" outgoingEdges="_rGq4RKJyEe2wX6mm17kbQg" width="7" height="7" resizeKind="NSEW">
+      <target xmi:type="org.polarsys.capella.core.data.oa:OperationalCapability" href="Flight_Simulator.capella#46bdff7d-d2c8-45d2-91b3-455c64e24b61"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.oa:OperationalCapability" href="Flight_Simulator.capella#46bdff7d-d2c8-45d2-91b3-455c64e24b61"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_ik8HwKJyEe2wX6mm17kbQg" showIcon="false" workspacePath="/org.polarsys.capella.core.sirius.analysis/description/images/OperationalCapability.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Capabilities%20Blank']/@defaultLayer/@nodeMappings[name='COC_OperationalCapabilities']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Capabilities%20Blank']/@defaultLayer/@nodeMappings[name='COC_OperationalCapabilities']"/>
@@ -1616,6 +1653,15 @@
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_EJ9DYpbqEe2W4vaxcdhh1g" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Capabilities%20Blank']/@defaultLayer/@edgeMappings[name='COC_OC_Extends']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_rGq4RKJyEe2wX6mm17kbQg" sourceNode="_ik32UKJyEe2wX6mm17kbQg" targetNode="_53J2sIEYEe2eGKwyVbw0_A">
+      <target xmi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement" href="Flight_Simulator.capella#e1225795-0245-456a-99a1-523cb4afd396"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement" href="Flight_Simulator.capella#e1225795-0245-456a-99a1-523cb4afd396"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_rGtUgKJyEe2wX6mm17kbQg" strokeColor="0,0,0">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Capabilities%20Blank']/@defaultLayer/@edgeMappings[name='COC_EntityOperationalCapabilityInvolvement']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_rGtUgaJyEe2wX6mm17kbQg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Capabilities%20Blank']/@defaultLayer/@edgeMappings[name='COC_EntityOperationalCapabilityInvolvement']"/>
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Capabilities%20Blank']"/>
     <activatedFilters xmi:type="filter:CompositeFilterDescription" href="platform:/plugin/org.polarsys.kitalpha.ad.integration.sirius/description/ad.odesign#//@ownedViewpoints[name='ad']/@ownedRepresentations[name='AD%20diagram']/@filters[name='ModelExtensionFilter']"/>
@@ -7457,7 +7503,7 @@
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_xIAnAJbqEe2W4vaxcdhh1g" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_xIAnAZbqEe2W4vaxcdhh1g"/>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_8inpIJbqEe2W4vaxcdhh1g" name="OE 5 : Customer Facilities">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_8inpIJbqEe2W4vaxcdhh1g" name="OE 5 : Flight Simulator Facilities">
       <target xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#5cb55cd4-ea45-4513-a8f2-0a169cb3a063"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.oa:Entity" href="Flight_Simulator.capella#5cb55cd4-ea45-4513-a8f2-0a169cb3a063"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>

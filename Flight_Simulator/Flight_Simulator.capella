@@ -303,6 +303,11 @@
           <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
               id="eb142c89-8c07-44bc-b710-2b0d14cc6603" involved="#12a7e49e-67c7-479e-82a5-1d970191e40f"/>
         </ownedOperationalCapabilities>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="46bdff7d-d2c8-45d2-91b3-455c64e24b61" name="OC 9: Provides a 6DOF Motion cabin">
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="e1225795-0245-456a-99a1-523cb4afd396" involved="#12a7e49e-67c7-479e-82a5-1d970191e40f"/>
+        </ownedOperationalCapabilities>
       </ownedAbstractCapabilityPkg>
       <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
           id="2881107a-8af0-4fa3-86d5-72f502502046" name="Interfaces">
