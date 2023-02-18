@@ -207,7 +207,8 @@
       <ownedRequirementPkgs xsi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg"
           id="872a8cf1-35de-45a1-bcca-43f5200697c7" name="Custormer Requirements">
         <ownedRequirements xsi:type="org.polarsys.capella.core.data.requirement:SystemUserRequirement"
-            id="cfca9d1b-86df-4052-b13f-bf7ccb81b232" name="SystemUserRequirement 1"/>
+            id="cfca9d1b-86df-4052-b13f-bf7ccb81b232" name="The System shall be able to obtaing FAA ATD certification"
+            requirementId="C208-UR-0001"/>
         <ownedRequirements xsi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement"
             id="087182ab-cccc-4ea1-a56f-c4a2ec8ded45" name="SystemFunctionalRequirement 2"/>
         <ownedRequirements xsi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalInterfaceRequirement"
@@ -386,6 +387,9 @@
               <languages>capella:linkedText</languages>
             </ownedSpecification>
           </ownedConstraints>
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.requirement:RequirementsTrace"
+              id="b4ae51ff-5c4b-4ce5-8776-afc3ffcdfde8" targetElement="#cfca9d1b-86df-4052-b13f-bf7ccb81b232"
+              sourceElement="#12a7e49e-67c7-479e-82a5-1d970191e40f"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="24766612-5b3e-4285-8c51-559436a1e8d7"
               name="OE 1.1: Simulation Computer" abstractType="#e28c1297-05a1-415d-b3c9-9b297372512e"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c4839a6a-dbc7-442d-ab7f-2b0a553af426"
